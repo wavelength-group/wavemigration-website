@@ -1,0 +1,51 @@
+backend:
+  name: github
+  repo: wavelength-group/rms-website
+  branch: main
+
+# Preview/admin site address (update to the live domain after cut-over)
+site_url: https://rms-website.netlify.app
+display_url: https://rms-website.netlify.app
+
+# Uploaded images (e.g. new team photos) land here and publish under /assets/img
+media_folder: "src/static/assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: content
+    label: Site content
+    description: >-
+      Team profiles and testimonials shown on the RMS homepage. Saving publishes
+      to the live site within a minute or two.
+    files:
+      - name: team
+        label: Team
+        file: src/_data/team.json
+        format: json
+        fields:
+          - label: Team members
+            name: members
+            widget: list
+            summary: "{{fields.name}} - {{fields.role}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Photo, name: photo, widget: image, hint: "Square headshot, at least 300 x 300 px" }
+              - { label: Bio, name: bio, widget: text, hint: "Leave a blank line between paragraphs." }
+              - { label: Email, name: email, widget: string, required: false }
+              - { label: Phone, name: phone, widget: string, required: false }
+              - { label: LinkedIn URL, name: linkedin, widget: string, required: false }
+      - name: testimonials
+        label: Testimonials
+        file: src/_data/testimonials.json
+        format: json
+        fields:
+          - label: Testimonials
+            name: items
+            widget: list
+            summary: "{{fields.name}} ({{fields.date}})"
+            fields:
+              - { label: Date, name: date, widget: string, hint: "e.g. November 2025" }
+              - { label: Reviewer name, name: name, widget: string }
+              - { label: Consultant credited, name: consultant, widget: string, required: false }
+              - { label: Quote, name: quote, widget: text, hint: "Without quotation marks - they are added automatically." }

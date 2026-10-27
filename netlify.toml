@@ -1,0 +1,8 @@
+# Netlify configuration for the RMS website
+# Static site generated with Eleventy from content in /src.
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "20"
