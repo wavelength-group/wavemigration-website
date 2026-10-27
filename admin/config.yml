@@ -1,11 +1,11 @@
 backend:
   name: github
-  repo: wavelength-group/rms-website
+  repo: wavelength-group/wavemigration-website
   branch: main
 
 # Preview/admin site address (update to the live domain after cut-over)
-site_url: https://rms-website.netlify.app
-display_url: https://rms-website.netlify.app
+site_url: https://wavemigration-website.netlify.app
+display_url: https://wavemigration-website.netlify.app
 
 # Uploaded images (e.g. new team photos) land here and publish under /assets/img
 media_folder: "src/static/assets/img"
