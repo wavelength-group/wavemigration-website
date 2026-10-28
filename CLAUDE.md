@@ -1,6 +1,7 @@
-# RMS website - context for Claude
+# Wavelength Migration Services website - context for Claude
 
-Public website for RMS (Regulatory & Migration Services), a division of Wavelength Group.
+Public website for Wavelength Migration Services (internally RMS, Regulatory & Migration Services),
+a division of Wavelength Group. Public-facing name changed from RMS on 28 Oct 2026.
 Owner: Dr John Bethell. Same architecture as `wavelength-group/ccentric-website`.
 
 ## Where things live
@@ -15,6 +16,8 @@ Owner: Dr John Bethell. Same architecture as `wavelength-group/ccentric-website`
 - `src/index.njk` - the single-page site (hand-coded HTML/CSS, Nunjucks loops for team and testimonials).
 - `src/_data/team.json`, `src/_data/testimonials.json` - editable content (also via CMS).
 - `src/static/assets/img/` - logos, mark, team photos (published at /assets/img/).
+  Logos are SVG: `logo-light.svg`, `logo-dark.svg` (dark-mode version), `mark.svg` (square icon).
+  `logo-light.png`, `logo-dark.png` and `rms-mark.png` are the retired RMS artwork, no longer referenced.
 - Build: Eleventy 3 (`npm run build` -> `_site/`), settings in `netlify.toml`.
 
 ## Origin
