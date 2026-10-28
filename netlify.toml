@@ -1,4 +1,4 @@
-# Netlify configuration for the RMS website
+# Netlify configuration for the Wavelength Migration Services website
 # Static site generated with Eleventy from content in /src.
 [build]
   command = "npm run build"

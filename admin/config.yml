@@ -15,7 +15,7 @@ collections:
   - name: content
     label: Site content
     description: >-
-      Team profiles and testimonials shown on the RMS homepage. Saving publishes
+      Team profiles and testimonials shown on the Wavelength Migration Services homepage. Saving publishes
       to the live site within a minute or two.
     files:
       - name: team

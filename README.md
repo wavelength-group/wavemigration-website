@@ -1,6 +1,6 @@
-# RMS - Regulatory & Migration Services website
+# Wavelength Migration Services website
 
-Static website for RMS, built with [Eleventy](https://www.11ty.dev/) and edited
+Static website for Wavelength Migration Services (formerly RMS), built with [Eleventy](https://www.11ty.dev/) and edited
 through [Sveltia CMS](https://sveltiacms.app/). Hosted on Netlify, owned by the
 `wavelength-group` GitHub organisation. Same setup as `ccentric-website`.
 
