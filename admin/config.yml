@@ -4,8 +4,8 @@ backend:
   branch: main
 
 # Live site address (Netlify default: wave-migration.netlify.app)
-site_url: https://www.wavemigrationservices.com
-display_url: https://www.wavemigrationservices.com
+site_url: https://wavemigrationservices.com
+display_url: https://wavemigrationservices.com
 
 # Uploaded images (e.g. new team photos) land here and publish under /assets/img
 media_folder: "src/static/assets/img"
