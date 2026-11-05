@@ -1,0 +1,12 @@
+<script>
+  (function(){
+    var root=document.documentElement, btn=document.getElementById('themeToggle');
+    var KEY='rms-theme';
+    try{var s=localStorage.getItem(KEY); if(s==='dark'||s==='light') root.setAttribute('data-theme',s);}catch(e){}
+    function current(){var a=root.getAttribute('data-theme');if(a) return a;return (window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches)?'dark':'light';}
+    btn&&btn.addEventListener('click',function(){var next=current()==='dark'?'light':'dark';root.setAttribute('data-theme',next);try{localStorage.setItem(KEY,next);}catch(e){}});
+    var els=[].slice.call(document.querySelectorAll('.reveal'));
+    if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion:reduce)').matches){els.forEach(function(el){el.classList.add('in');});}
+    else{var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.14});els.forEach(function(el){io.observe(el);});}
+  })();
+</script>

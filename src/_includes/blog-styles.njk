@@ -1,0 +1,28 @@
+<style>
+  .page-head{padding:72px 0 40px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--surface),var(--ground))}
+  .page-head h1{font-size:clamp(2rem,4vw,2.9rem);font-weight:800;letter-spacing:-.03em;margin-top:14px;max-width:24ch}
+  .page-head .lead{margin-top:18px}
+  .posts{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+  .post-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;color:var(--ink);transition:transform .2s ease}
+  .post-card:hover{transform:translateY(-3px);text-decoration:none}
+  .post-card h2{font-size:21px;line-height:1.25}
+  .post-card p{color:var(--muted);font-size:15.5px}
+  .post-card .go{margin-top:auto;font-weight:700;color:var(--teal-ink);font-size:15px}
+  .meta{font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .empty{color:var(--muted)}
+  .article{max-width:720px;margin:0 auto;padding:0 26px}
+  .article .back{display:inline-block;font-weight:700;font-size:14.5px;margin-bottom:18px}
+  .prose{padding:48px 0 24px;font-size:18px}
+  .prose > * + *{margin-top:1.1em}
+  .prose h2{font-size:1.55rem;margin-top:1.8em}
+  .prose h3{font-size:1.25rem;margin-top:1.5em}
+  .prose ul,.prose ol{padding-left:1.3em}
+  .prose li + li{margin-top:.4em}
+  .prose a{text-decoration:underline;text-underline-offset:3px}
+  .prose blockquote{margin-left:0;padding-left:18px;border-left:3px solid var(--aqua);color:var(--muted)}
+  .post-cta{margin:32px 0 96px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r);padding:26px 28px}
+  .post-cta h2{font-size:20px}
+  .post-cta p{color:var(--muted);margin-top:8px;font-size:16px}
+  .post-cta .btn{margin-top:18px}
+  .disclaimer{font-size:13.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px}
+</style>

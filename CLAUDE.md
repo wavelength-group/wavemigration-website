@@ -14,6 +14,9 @@ Owner: Dr John Bethell. Same architecture as `wavelength-group/ccentric-website`
 
 ## Structure
 - `src/index.njk` - the single-page site (hand-coded HTML/CSS, Nunjucks loops for team and testimonials).
+- `src/_includes/` - shared partials (styles, header, footer, scripts) used by the homepage and blog.
+- `src/blog/` - Insights blog. Listing at /blog/, posts are Markdown in `src/blog/posts/` (layout `_includes/post.njk`),
+  editable via the CMS "Insights (blog)" collection. URL = /blog/<file name>/.
 - `src/_data/team.json`, `src/_data/testimonials.json` - editable content (also via CMS).
 - `src/static/assets/img/` - logos, mark, team photos (published at /assets/img/).
   Logos are SVG: `logo-light.svg`, `logo-dark.svg` (dark-mode version), `mark.svg` (square icon).

@@ -1,0 +1,46 @@
+---
+permalink: /blog/index.html
+title: Insights
+---
+<!doctype html>
+<html lang="en-AU">
+<head>
+<title>Insights | Wavelength Migration Services</title>
+<meta name="description" content="Updates on visas, registration and migration policy for health employers and international health professionals in Australia and New Zealand.">
+<link rel="canonical" href="https://wavemigrationservices.com/blog/">
+{% include "head.njk" %}
+</head>
+<body>
+{% include "header.njk" %}
+<main id="top">
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Insights</p>
+      <h1>Visa, registration and migration updates</h1>
+      <p class="lead">Policy changes and practical guidance for health employers and international health professionals moving to Australia and New Zealand.</p>
+    </div>
+  </section>
+  <section style="padding-top:56px">
+    <div class="wrap">
+      {%- set posts = collections.post | reverse %}
+      {%- if posts.length %}
+      <div class="posts">
+        {%- for post in posts %}
+        <a class="post-card" href="{{ post.url }}">
+          <span class="meta">{{ post.date | readableDate }}</span>
+          <h2>{{ post.data.title }}</h2>
+          {% if post.data.summary %}<p>{{ post.data.summary }}</p>{% endif %}
+          <span class="go">Read more &rarr;</span>
+        </a>
+        {%- endfor %}
+      </div>
+      {%- else %}
+      <p class="empty">Articles are on their way.</p>
+      {%- endif %}
+    </div>
+  </section>
+</main>
+{% include "footer.njk" %}
+{% include "scripts.njk" %}
+</body>
+</html>

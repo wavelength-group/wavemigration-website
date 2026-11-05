@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<title>{{ title }} | Wavelength Migration Services</title>
+<meta name="description" content="{{ summary }}">
+<link rel="canonical" href="https://wavemigrationservices.com{{ page.url }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ summary }}">
+<meta property="og:url" content="https://wavemigrationservices.com{{ page.url }}">
+{% include "head.njk" %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":{{ title | dump | safe }},"description":{{ summary | dump | safe }},"datePublished":"{{ page.date | isoDate }}","author":{"@type":"Organization","name":{{ (author or "Wavelength Migration Services") | dump | safe }}},"publisher":{"@type":"Organization","name":"Wavelength Migration Services"},"mainEntityOfPage":"https://wavemigrationservices.com{{ page.url }}"}
+</script>
+</head>
+<body>
+{% include "header.njk" %}
+<main id="top">
+  <section class="page-head" style="padding-bottom:44px">
+    <div class="article">
+      <a class="back" href="/blog/">&larr; All insights</a>
+      <p class="meta">{{ page.date | readableDate }}{% if author %} &middot; {{ author }}{% endif %}</p>
+      <h1>{{ title }}</h1>
+      {% if summary %}<p class="lead">{{ summary }}</p>{% endif %}
+    </div>
+  </section>
+  <div class="article">
+    <article class="prose">
+{{ content | safe }}
+      <p class="disclaimer">This article is general information only and does not constitute migration or legal advice. Visa policy changes frequently; contact us for advice on your circumstances.</p>
+    </article>
+    <aside class="post-cta">
+      <h2>Need advice on your situation?</h2>
+      <p>Our MARA-registered agents advise health employers and practitioners on registration and visas. We respond within 48 hours.</p>
+      <a href="/#contact" class="btn btn-primary">Make an enquiry</a>
+    </aside>
+  </div>
+</main>
+{% include "footer.njk" %}
+{% include "scripts.njk" %}
+</body>
+</html>

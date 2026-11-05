@@ -49,3 +49,21 @@ collections:
               - { label: Reviewer name, name: name, widget: string }
               - { label: Consultant credited, name: consultant, widget: string, required: false }
               - { label: Quote, name: quote, widget: text, hint: "Without quotation marks - they are added automatically." }
+
+  - name: blog
+    label: Insights (blog)
+    label_singular: Article
+    description: Articles shown at /blog. Saving publishes to the live site within a minute or two.
+    folder: src/blog/posts
+    extension: md
+    format: frontmatter
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    sortable_fields: [date, title]
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: Author, name: author, widget: string, required: false }
+      - { label: Summary, name: summary, widget: text, hint: "One or two sentences. Shown on the blog listing and in search results." }
+      - { label: Body, name: body, widget: markdown }
