@@ -8,6 +8,7 @@
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ summary }}">
 <meta property="og:url" content="https://wavemigrationservices.com{{ page.url }}">
+{% if image %}<meta property="og:image" content="{{ image }}">{% endif %}
 {% include "head.njk" %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","headline":{{ title | dump | safe }},"description":{{ summary | dump | safe }},"datePublished":"{{ page.date | isoDate }}","author":{"@type":"Organization","name":{{ (author or "Wavelength Migration Services") | dump | safe }}},"publisher":{"@type":"Organization","name":"Wavelength Migration Services"},"mainEntityOfPage":"https://wavemigrationservices.com{{ page.url }}"}
@@ -24,6 +25,12 @@
       {% if summary %}<p class="lead">{{ summary }}</p>{% endif %}
     </div>
   </section>
+  {%- if image %}
+  <figure class="hero-photo article-photo">
+    <img src="{{ image }}" alt="{{ image_alt or '' }}" width="1600" height="900" decoding="async">
+    {%- if image_credit %}<figcaption>Photo: {% if image_credit_url %}<a href="{{ image_credit_url }}" target="_blank" rel="noopener">{{ image_credit }}</a>{% else %}{{ image_credit }}{% endif %}</figcaption>{% endif %}
+  </figure>
+  {%- endif %}
   <div class="article">
     <article class="prose">
 {{ content | safe }}
