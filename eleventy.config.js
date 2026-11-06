@@ -8,8 +8,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.on("eleventy.after", ({ dir }) => {
     const fs = require("fs"), path = require("path");
     const recolour = {
-      "logo-dark.svg": [["#E87722", "#4FE3D4"], ["#5FC5C9", "#4FE3D4"]],
-      "logo-light.svg": [["#E87722", "#08807A"], ["#033F3D", "#0B2E31"], ["#0C7A82", "#08807A"]],
+      // Wave mark stays orange (Lagoon Glow secondary on dark; original brand orange on light)
+      "logo-dark.svg": [["#E87722", "#FF9A45"], ["#5FC5C9", "#4FE3D4"]],
+      "logo-light.svg": [["#033F3D", "#0B2E31"], ["#0C7A82", "#08807A"]],
     };
     for (const [file, swaps] of Object.entries(recolour)) {
       const p = path.join(dir.output, "assets/img", file);
