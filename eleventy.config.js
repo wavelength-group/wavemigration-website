@@ -3,6 +3,23 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/static": "." });
   eleventyConfig.addPassthroughCopy({ "admin": "admin" });
 
+  // Lagoon Glow logo colours (Nov 2026). The source SVGs keep the original orange artwork;
+  // the published copies are recoloured here so the logo matches the site palette.
+  eleventyConfig.on("eleventy.after", ({ dir }) => {
+    const fs = require("fs"), path = require("path");
+    const recolour = {
+      "logo-dark.svg": [["#E87722", "#4FE3D4"], ["#5FC5C9", "#4FE3D4"]],
+      "logo-light.svg": [["#E87722", "#08807A"], ["#033F3D", "#0B2E31"], ["#0C7A82", "#08807A"]],
+    };
+    for (const [file, swaps] of Object.entries(recolour)) {
+      const p = path.join(dir.output, "assets/img", file);
+      if (!fs.existsSync(p)) continue;
+      let svg = fs.readFileSync(p, "utf8");
+      for (const [from, to] of swaps) svg = svg.split(`fill="${from}"`).join(`fill="${to}"`);
+      fs.writeFileSync(p, svg);
+    }
+  });
+
   // Only Nunjucks templates are processed
   eleventyConfig.setTemplateFormats(["njk", "md"]);
 
