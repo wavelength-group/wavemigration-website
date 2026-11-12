@@ -71,7 +71,10 @@
   .hero{position:relative;background:linear-gradient(180deg,var(--surface),var(--ground));color:var(--ink);overflow:hidden;padding:104px 0 116px;border-bottom:1px solid var(--line)}
   .hero .wrap{position:relative;z-index:2}
   .hero-bg{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
-  .hero-mark{position:absolute;right:-50px;top:-50px;width:300px;height:300px;opacity:.09;transform:rotate(-8deg);display:block}
+  .hero-mark{display:none}
+  .hero-bg::before{content:"";position:absolute;top:0;right:0;bottom:0;width:62%;background:url(/assets/img/hero-passport.svg) right center/cover no-repeat;opacity:.26;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 55%),linear-gradient(to bottom,#000 70%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,#000 55%),linear-gradient(to bottom,#000 70%,transparent 100%);mask-composite:intersect}
+  :root[data-theme="light"] .hero-bg::before{opacity:.14;mix-blend-mode:multiply}
+  @media (max-width:760px){.hero-bg::before{width:100%;opacity:.14}}
   .hero-diag{position:absolute;right:0;bottom:0;width:60%;height:100%}
   .hero-diag path:nth-child(1){stroke:var(--spark)}
   .hero-diag path:nth-child(2),.hero-diag path:nth-child(3){stroke:var(--aqua)}
