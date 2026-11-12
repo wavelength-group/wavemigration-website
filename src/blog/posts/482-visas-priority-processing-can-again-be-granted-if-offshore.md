@@ -3,10 +3,6 @@ title: "Breaking news: healthcare 482 visas to receive highest processing priori
 date: 2026-11-05
 author: Wavelength Migration Services
 summary: "A new Ministerial Direction gives healthcare subclass 482 applications the highest processing priority, whether the applicant is in Australia or overseas at lodgement."
-image: "https://images.unsplash.com/photo-1490430657723-4d607c1503fc?w=1600&q=70&auto=format&fit=crop"
-image_alt: "Airport departure board viewed from below"
-image_credit: "JESHOOTS.COM on Unsplash"
-image_credit_url: "https://unsplash.com/photos/a-low-angle-shot-of-a-departure-board-at-an-airport-9qQTUYm4ss4"
 ---
 We have received breaking news directly from the Department of Home Affairs regarding the processing of subclass 482 visa applications for healthcare workers.
 
