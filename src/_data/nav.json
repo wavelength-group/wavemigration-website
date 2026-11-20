@@ -1,0 +1,33 @@
+{
+  "items": [
+    { "label": "Home", "url": "/" },
+    {
+      "label": "Our Services", "url": "/services/",
+      "children": [
+        { "label": "Australian Medical Registration", "url": "/services/australian-medical-registration/" },
+        { "label": "New Zealand Medical Registration", "url": "/services/new-zealand-medical-registration/" },
+        { "label": "Specialist College Applications", "url": "/services/specialist-college-applications/" },
+        { "label": "Medicare & Provider Numbers", "url": "/services/medicare-provider-numbers/" },
+        { "label": "Australian Visas & Migration", "url": "/services/australian-visas-migration/" }
+      ]
+    },
+    {
+      "label": "Who We Help", "url": "/who-we-help/",
+      "children": [
+        { "label": "Healthcare Professionals", "url": "/who-we-help/healthcare-professionals/" },
+        { "label": "Healthcare Employers", "url": "/who-we-help/healthcare-employers/" },
+        { "label": "Visa Support", "url": "/who-we-help/visa-support/" }
+      ]
+    },
+    { "label": "About Us", "url": "/about/" },
+    {
+      "label": "Resources", "url": "/resources/",
+      "children": [
+        { "label": "Guides & Resources", "url": "/resources/#guides" },
+        { "label": "Frequently Asked Questions", "url": "/resources/#faqs" },
+        { "label": "News & Updates", "url": "/blog/" }
+      ]
+    },
+    { "label": "Contact Us", "url": "/contact/" }
+  ]
+}

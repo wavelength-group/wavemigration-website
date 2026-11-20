@@ -24,6 +24,11 @@ module.exports = function (eleventyConfig) {
   // Only Nunjucks templates are processed
   eleventyConfig.setTemplateFormats(["njk", "md"]);
 
+  // Navigation: is this menu item the current section?
+  eleventyConfig.addFilter("isActive", (pageUrl, itemUrl) =>
+    itemUrl === "/" ? pageUrl === "/" : (pageUrl || "").startsWith(itemUrl) ||
+      (itemUrl === "/resources/" && (pageUrl || "").startsWith("/blog/")));
+
   // Strip spaces for tel: links
   eleventyConfig.addFilter("noSpace", (s) => (s || "").replace(/\s+/g, ""));
 

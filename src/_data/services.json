@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "slug": "australian-medical-registration",
+      "title": "Australian Medical Registration",
+      "summary": "Assistance with AHPRA and Medical Board of Australia registration applications.",
+      "points": ["AHPRA registration applications", "Medical Board of Australia requirements", "Primary Source Verification through AMC and EPIC"]
+    },
+    {
+      "slug": "new-zealand-medical-registration",
+      "title": "New Zealand Medical Registration",
+      "summary": "Support with Medical Council of New Zealand registration applications.",
+      "points": ["Vocational registration", "Provisional general registration", "Locum tenens applications"]
+    },
+    {
+      "slug": "specialist-college-applications",
+      "title": "Specialist College Applications",
+      "summary": "Assistance with specialist college assessments and applications, including RACGP PEP Specialist pathways and Area of Need.",
+      "points": ["Specialist college assessments", "RACGP PEP Specialist pathway", "Area of Need applications"]
+    },
+    {
+      "slug": "medicare-provider-numbers",
+      "title": "Medicare & Provider Numbers",
+      "summary": "Support with Medicare provider number applications and section 19AB exemptions.",
+      "points": ["Medicare provider and prescriber numbers", "Section 19AB exemptions", "DPA and DWS advice"]
+    },
+    {
+      "slug": "australian-visas-migration",
+      "title": "Australian Visas & Migration",
+      "summary": "Migration assistance with our registered migration agents.",
+      "points": ["Employer sponsorship and nomination", "Temporary skilled and permanent visas", "Visas for family members"]
+    }
+  ]
+}
