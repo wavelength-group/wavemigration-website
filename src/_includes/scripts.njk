@@ -2,6 +2,16 @@
   (function(){
     // Dark theme only. Clear any light-mode choice saved by the old toggle.
     try{localStorage.removeItem('rms-theme');}catch(e){}
+    // Mobile menu
+    var header=document.getElementById('siteHeader'), toggle=document.getElementById('navToggle');
+    if(header&&toggle){
+      toggle.addEventListener('click',function(){
+        var open=header.classList.toggle('menu-open');
+        toggle.setAttribute('aria-expanded',open?'true':'false');
+        toggle.setAttribute('aria-label',open?'Close menu':'Open menu');
+      });
+      [].forEach.call(header.querySelectorAll('.nav-links a'),function(a){a.addEventListener('click',function(){header.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');});});
+    }
     var els=[].slice.call(document.querySelectorAll('.reveal'));
     if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion:reduce)').matches){els.forEach(function(el){el.classList.add('in');});}
     else{var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.14});els.forEach(function(el){io.observe(el);});}

@@ -1,0 +1,27 @@
+---
+layout: page.njk
+title: Our Services
+description: Medical registration in Australia and New Zealand, specialist college applications, Medicare provider numbers and Australian visas for health professionals and employers.
+permalink: /services/index.html
+---
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Our services</p>
+      <h1>Support at every stage of the move</h1>
+      <p class="lead">Five services that cover the regulatory and migration work around a medical move. Each one has its own page, so you can read only what applies to you.</p>
+    </div>
+  </section>
+  <section style="padding-top:56px">
+    <div class="wrap">
+      <div class="svc-cards">
+        {%- for s in services.items %}
+        <a class="svc-card" href="/services/{{ s.slug }}/">
+          <h2>{{ s.title }}</h2>
+          <p>{{ s.summary }}</p>
+          <span class="go">Read more &rarr;</span>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+{% include "cta-band.njk" %}

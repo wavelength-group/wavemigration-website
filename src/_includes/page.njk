@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<title>{% if title and page.url != "/" %}{{ title }} | {% endif %}Wavelength Migration Services{% if page.url == "/" %} | Healthcare registration and migration{% endif %}</title>
+<meta name="description" content="{{ description or 'Wavelength Migration Services is the specialist regulatory and migration partner for Australia and New Zealand’s health sector, for employers and international health professionals.' }}">
+<link rel="canonical" href="https://wavemigrationservices.com{{ page.url }}">
+{% include "head.njk" %}
+</head>
+<body>
+{% include "header.njk" %}
+<main id="top">
+{{ content | safe }}
+</main>
+{% include "footer.njk" %}
+{% include "scripts.njk" %}
+</body>
+</html>

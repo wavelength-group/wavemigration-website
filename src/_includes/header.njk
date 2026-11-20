@@ -1,19 +1,31 @@
-<header class="site">
+<header class="site" id="siteHeader">
   <div class="wrap nav">
     <a href="/" class="logo" aria-label="Wavelength Migration Services home">
       <img class="l l-light" src="/assets/img/logo-light.svg" alt="Wavelength Migration Services">
       <img class="l l-dark" src="/assets/img/logo-dark.svg" alt="Wavelength Migration Services">
     </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="/#employers">For Employers</a>
-      <a href="/#professionals">For Professionals</a>
-      <a href="/#approach">Approach</a>
-      <a href="/#testimonials">Testimonials</a>
-      <a href="/#about">About</a>
-      <a href="/blog/">Insights</a>
+    <nav class="nav-links" id="siteNav" aria-label="Primary">
+      {%- for item in nav.items %}
+      {%- set active = page.url | isActive(item.url) %}
+      {%- if item.children %}
+      <div class="nav-item has-sub{% if active %} is-active{% endif %}">
+        <a class="nav-top" href="{{ item.url }}"{% if active %} aria-current="true"{% endif %}>{{ item.label }} <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <div class="sub">
+          {%- for c in item.children %}
+          <a href="{{ c.url }}"{% if page.url == c.url %} aria-current="page"{% endif %}>{{ c.label }}</a>
+          {%- endfor %}
+        </div>
+      </div>
+      {%- else %}
+      <a class="nav-top{% if active %} is-active{% endif %}" href="{{ item.url }}"{% if active %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      {%- endif %}
+      {%- endfor %}
     </nav>
     <div class="nav-right">
-      <a href="/#contact" class="btn btn-primary"><span class="t-lg">Make an enquiry</span><span class="t-sm">Enquire</span></a>
+      <a href="/contact/" class="btn btn-primary"><span class="t-lg">Make an enquiry</span><span class="t-sm">Enquire</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path class="i-open" d="M4 7h16M4 12h16M4 17h16"/><path class="i-close" d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
     </div>
   </div>
 </header>
