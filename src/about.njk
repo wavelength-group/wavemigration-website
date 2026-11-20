@@ -1,0 +1,101 @@
+---
+layout: page.njk
+title: About Us
+description: About Wavelength Migration Services, our team of regulatory consultants and MARA-registered migration agents, and what our clients say.
+permalink: /about/index.html
+---
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">About us</p>
+      <h1>Built inside a leading medical recruiter, focused on one thing</h1>
+      <p class="lead">Tailored, personalised support throughout the application process, with a dedicated in-house consultant from first conversation to first day.</p>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section id="about-us" style="padding-top:64px">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Our story</p>
+        <h2>About Wavelength Migration Services</h2>
+        <p>Wavelength Migration Services brings the regulatory and migration expertise developed inside <a href="https://www.wavepeople.com" target="_blank" rel="noopener">Wavelength Group</a> into a dedicated, specialist practice — getting qualified health professionals registered, sponsored and cleared to practise in Australia and New Zealand, reliably and at any scale.</p>
+        <a class="endorse" href="https://www.wavepeople.com" target="_blank" rel="noopener"><img src="/assets/img/mark.svg" alt=""> Part of Wavelength Group</a>
+      </div>
+        <div class="exp-strip">
+          <div><b>38+</b><span>years of combined regulatory and migration experience across the team</span></div>
+          <div><b>1:1</b><span>a dedicated in-house consultant for every application</span></div>
+          <div><b>MARA</b><span>registered migration agents on the team</span></div>
+          <div><b>AU &amp; NZ</b><span>registration and migration support in both countries</span></div>
+        </div>
+    </div>
+  </section>
+
+  <section id="team" style="padding-top:24px">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="eyebrow">Meet our team</p>
+        <h2>The people who manage your case</h2>
+      </div>
+      <div class="team">
+{%- for p in team.members %}
+        <article class="person reveal">
+          <img class="pphoto" src="{{ p.photo }}" alt="{{ p.name }}" loading="lazy" decoding="async">
+          <div class="pinfo">
+            <div class="name">{{ p.name }}</div>
+            <div class="role">{{ p.role }}</div>
+            {%- for para in p.bio.split("
+
+") %}
+            <p class="bio">{{ para }}</p>
+            {%- endfor %}
+            <div class="cx">
+              {%- if p.email %}
+              <a href="mailto:{{ p.email }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg> {{ p.email }}</a>
+              {%- endif %}
+              {%- if p.phone %}
+              <a href="tel:{{ p.phone | noSpace }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg> {{ p.phone }}</a>
+              {%- endif %}
+              {%- if p.linkedin %}
+              <a href="{{ p.linkedin }}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg> LinkedIn</a>
+              {%- endif %}
+            </div>
+          </div>
+        </article>
+{%- endfor %}
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WHY -->
+  <section id="why-us" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Why Wavelength Migration</p>
+        <h2>Specialist knowledge that de-risks the crossing</h2>
+        <p>Regulatory and migration work rewards experience and current knowledge. That is all we do.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div><h4>Full compliance, assured</h4><p>Every administrative requirement met to standard, so appointments hold up to scrutiny.</p></div>
+        <div class="why reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg></div><h4>Faster processing</h4><p>We keep every application moving and flag issues before they cost you time.</p></div>
+        <div class="why reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></div><h4>MARA-registered agents</h4><p>Migration handled by agents bound by the MARA Code of Conduct, with contacts across the regulators.</p></div>
+        <div class="why reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h4>Responsive by design</h4><p>A named consultant per case and a commitment to respond within 48 hours of your enquiry.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Testimonials</p>
+        <h2>Doctors and employers, in their own words</h2>
+        <p>Recent five-star reviews from the practitioners and organisations our team has guided through registration, migration and visas.</p>
+      </div>
+      <div class="todo" style="margin-bottom:24px"><b>More to come</b><span>Additional testimonials will be added here.</span></div>
+      <div class="tst-grid">
+{%- for t in testimonials.items %}
+        <figure class="tst"><div class="date">{{ t.date }}</div><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“{{ t.quote }}”</blockquote><figcaption class="by"><span class="who">{{ t.name }}</span>{% if t.consultant %}<span class="for">for {{ t.consultant }}</span>{% endif %}</figcaption></figure>
+{%- endfor %}
+      </div>
+    </div>
+  </section>

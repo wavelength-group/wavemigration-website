@@ -1,0 +1,49 @@
+---
+layout: page.njk
+title: Resources
+description: Guides, frequently asked questions and news on medical registration, Medicare and visas for health professionals and employers in Australia and New Zealand.
+permalink: /resources/index.html
+---
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Resources</p>
+      <h1>Guides, answers and updates</h1>
+      <p class="lead">Practical information on registration, Medicare and visas for health professionals and the employers recruiting them.</p>
+    </div>
+  </section>
+
+  <section id="guides" style="padding-top:56px">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Helpful guides &amp; resources</p><h2>Guides</h2></div>
+      <div class="todo"><b>Content to come</b><span>Downloadable guides and checklists will be added here as the team prepares them.</span></div>
+    </div>
+  </section>
+
+  <section id="faqs" class="band">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Frequently asked questions</p><h2>FAQs</h2></div>
+      <div class="faq">
+        <details><summary>Placeholder question one</summary><p>Answer to come. The migration team will supply the questions doctors and employers ask most often.</p></details>
+        <details><summary>Placeholder question two</summary><p>Answer to come.</p></details>
+        <details><summary>Placeholder question three</summary><p>Answer to come.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">News &amp; updates</p><h2>Latest insights</h2></div>
+      <div class="posts">
+        {%- set latest = collections.post | reverse %}
+        {%- for post in latest | batch(3) | first %}
+        <a class="post-card" href="{{ post.url }}">
+          <span class="meta">{{ post.date | readableDate }}</span>
+          <h3 style="font-size:21px;line-height:1.25">{{ post.data.title }}</h3>
+          {% if post.data.summary %}<p>{{ post.data.summary }}</p>{% endif %}
+          <span class="go">Read more &rarr;</span>
+        </a>
+        {%- endfor %}
+      </div>
+      <p style="margin-top:22px"><a href="/blog/" style="font-weight:700">All news &amp; updates &rarr;</a></p>
+    </div>
+  </section>

@@ -1,0 +1,45 @@
+---
+layout: page.njk
+title: Contact Us
+description: Contact Wavelength Migration Services about registration, Medicare and visa support for health professionals and employers.
+permalink: /contact/index.html
+---
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Contact us</p>
+      <h1>Make an enquiry</h1>
+      <p class="lead">Whether you&rsquo;re a healthcare professional planning your next move or an employer seeking regulatory and migration assistance, our team is here to help. We respond within 48 hours.</p>
+    </div>
+  </section>
+  <section style="padding-top:56px">
+    <div class="wrap contact-grid">
+      <form class="enquiry" name="enquiry" method="POST" action="/contact/thanks/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="enquiry">
+        <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="row2">
+          <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-phone">Phone <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="f-type">I am a</label>
+            <select id="f-type" name="enquirer" required>
+              <option value="" disabled selected>Please choose</option>
+              <option>Healthcare professional</option>
+              <option>Healthcare employer</option>
+              <option>Visa enquiry (non-healthcare)</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="f-msg">How can we help?</label><textarea id="f-msg" name="message" required></textarea></div>
+        <p class="fine">We use your details only to respond to your enquiry.</p>
+        <button type="submit" class="btn btn-primary">Send enquiry</button>
+      </form>
+      <aside class="contact-side">
+        <div class="item"><div class="k">Email</div><div class="v"><a href="mailto:rms@wave.com.au">rms@wave.com.au</a></div></div>
+        <div class="item"><div class="k">Response time</div><div class="v">Within 48 hours</div></div>
+        <div class="item"><div class="k">Practice</div><div class="v">Wavelength Migration Services</div><p style="color:var(--muted);font-size:14.5px;margin-top:6px">Part of <a href="https://www.wavepeople.com" target="_blank" rel="noopener">Wavelength Group</a></p></div>
+      </aside>
+    </div>
+  </section>
