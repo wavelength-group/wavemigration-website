@@ -48,6 +48,8 @@ collections:
               - { label: Date, name: date, widget: string, hint: "e.g. November 2025" }
               - { label: Reviewer name, name: name, widget: string }
               - { label: Consultant credited, name: consultant, widget: string, required: false }
+              - { label: Source, name: source, widget: string, required: false, hint: "e.g. Google review" }
+              - { label: Show 5 stars, name: stars, widget: boolean, required: false, default: false, hint: "Only tick for a confirmed five-star rating" }
               - { label: Quote, name: quote, widget: text, hint: "Without quotation marks - they are added automatically." }
 
   - name: blog

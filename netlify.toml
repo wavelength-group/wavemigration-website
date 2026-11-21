@@ -6,3 +6,10 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# Old Insights article address (renamed Nov 2026)
+[[redirects]]
+  from = "/blog/482-visas-priority-processing-can-again-be-granted-if-offshore/*"
+  to = "/blog/healthcare-482-visa-priority-processing/"
+  status = 301
+  force = true

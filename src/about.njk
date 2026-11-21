@@ -89,12 +89,11 @@ permalink: /about/index.html
       <div class="sec-head">
         <p class="eyebrow">Testimonials</p>
         <h2>Doctors and employers, in their own words</h2>
-        <p>Recent five-star reviews from the practitioners and organisations our team has guided through registration, migration and visas.</p>
+        <p>Reviews from the doctors and organisations our team has guided through registration, specialist college assessments, migration and visas.</p>
       </div>
-      <div class="todo" style="margin-bottom:24px"><b>More to come</b><span>Additional testimonials will be added here.</span></div>
       <div class="tst-grid">
 {%- for t in testimonials.items %}
-        <figure class="tst"><div class="date">{{ t.date }}</div><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“{{ t.quote }}”</blockquote><figcaption class="by"><span class="who">{{ t.name }}</span>{% if t.consultant %}<span class="for">for {{ t.consultant }}</span>{% endif %}</figcaption></figure>
+        <figure class="tst">{% if t.date or t.source %}<div class="date">{{ t.date }}{% if t.date and t.source %} &middot; {% endif %}{{ t.source }}</div>{% endif %}{% if t.stars %}<div class="stars" aria-label="5 out of 5 stars">★★★★★</div>{% endif %}<blockquote>“{{ t.quote }}”</blockquote><figcaption class="by"><span class="who">{{ t.name }}</span>{% if t.consultant %}<span class="for">for {{ t.consultant }}</span>{% endif %}</figcaption></figure>
 {%- endfor %}
       </div>
     </div>
