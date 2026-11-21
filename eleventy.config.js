@@ -12,10 +12,16 @@ module.exports = function (eleventyConfig) {
       "logo-dark.svg": [["#E87722", "#FF9A45"], ["#5FC5C9", "#4FE3D4"]],
       "logo-light.svg": [["#033F3D", "#0B2E31"], ["#0C7A82", "#08807A"]],
     };
+    // More space between "wavelength" and "MIGRATION SERVICES": wordmark up 25 units, descriptor down 15 (Nov 2026)
+    const spacing = { "logo-dark.svg": ["#FFFFFF", "#5FC5C9"], "logo-light.svg": ["#033F3D", "#0C7A82"] };
+    const orig = "translate(0.000000,600.000000) scale(0.100000,-0.100000)";
     for (const [file, swaps] of Object.entries(recolour)) {
       const p = path.join(dir.output, "assets/img", file);
       if (!fs.existsSync(p)) continue;
       let svg = fs.readFileSync(p, "utf8");
+      const [wordmark, descriptor] = spacing[file];
+      svg = svg.replace(`${orig}" fill="${wordmark}"`, `translate(0,575) scale(0.1,-0.1)" fill="${wordmark}"`);
+      svg = svg.replace(`${orig}" fill="${descriptor}"`, `translate(0,615) scale(0.1,-0.1)" fill="${descriptor}"`);
       for (const [from, to] of swaps) svg = svg.split(`fill="${from}"`).join(`fill="${to}"`);
       fs.writeFileSync(p, svg);
     }
