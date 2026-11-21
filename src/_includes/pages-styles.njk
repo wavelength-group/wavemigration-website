@@ -110,6 +110,15 @@
   .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--aqua);outline-offset:1px;border-color:transparent}
   .enquiry .fine{font-size:13px;color:var(--muted)}
   .enquiry .btn{justify-self:start;border:none}
+  .enquiry .btn:disabled{opacity:.7;cursor:wait}
+  .form-error{color:#FFB4A8;font-size:15px}
+  .form-error a{color:inherit;text-decoration:underline}
+  .enquiry-sent{display:grid;gap:14px;align-content:start;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:40px 32px;outline:none}
+  .enquiry[hidden],.enquiry-sent[hidden]{display:none}
+  .enquiry-sent .tick{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--aqua) 16%,transparent);color:var(--aqua)}
+  .enquiry-sent .tick svg{width:26px;height:26px}
+  .enquiry-sent h2{font-size:clamp(1.4rem,2.4vw,1.8rem)}
+  .enquiry-sent p{color:var(--muted)}
   .hp{position:absolute;left:-9999px}
   .contact-side{display:grid;gap:18px}
   .contact-side .item{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
