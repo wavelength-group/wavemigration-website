@@ -1,10 +1,10 @@
 <style>
-  /* Lagoon Glow palette (Nov 2026). Dark is the default; light applies only when the visitor chooses it with the toggle. */
+  /* Slate background palette (Nov 2026), with the Lagoon Glow accents (aqua, orange) and text. Dark is the default; light applies only when the visitor chooses it with the toggle. */
   :root{
-    --ground:#032A2E;--surface:#08393D;--surface-2:#0E4549;--ink:#ECF7F7;--muted:#9CC4C5;
-    --navy:#021E21;--navy-2:#073236;--indigo:#4FE3D4;--teal:#4FE3D4;--teal-deep:#7DEBDF;--teal-ink:#6BE8DB;
+    --ground:#1A242E;--surface:#222E3A;--surface-2:#2A3845;--ink:#ECF7F7;--muted:#9CC4C5;
+    --navy:#141C24;--navy-2:#1C2631;--indigo:#4FE3D4;--teal:#4FE3D4;--teal-deep:#7DEBDF;--teal-ink:#6BE8DB;
     --aqua:#4FE3D4;--pink:#4FE3D4;--pink-deep:#3CCFC0;--pink-ink:#6BE8DB;--spark:#FF9A45;--on-accent:#032A2E;
-    --line:#164B4F;--line-strong:#245D61;--on-navy:#ECF7F7;--on-navy-mut:#9CC4C5;
+    --line:#32404E;--line-strong:#3D4D5D;--on-navy:#ECF7F7;--on-navy-mut:#9CC4C5;
     --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -16px rgba(0,0,0,.6);
     --shadow-lg:0 1px 2px rgba(0,0,0,.35),0 28px 64px -30px rgba(0,0,0,.75);
     --maxw:1140px;--r:14px;
@@ -72,7 +72,7 @@
   .hero .wrap{position:relative;z-index:2}
   .hero-bg{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
   .hero-mark{display:none}
-  .hero-bg::before{content:"";position:absolute;top:0;right:0;bottom:0;width:62%;background:url(/assets/img/hero-passport.svg) calc(100% + 240px) center/cover no-repeat;opacity:.26;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 55%),linear-gradient(to bottom,#000 70%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,#000 55%),linear-gradient(to bottom,#000 70%,transparent 100%);mask-composite:intersect}
+  .hero-bg::before{content:"";position:absolute;top:0;right:0;bottom:0;width:62%;background:url(/assets/img/hero-passport.svg) calc(100% + 240px) center/cover no-repeat;opacity:.26;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 55%),linear-gradient(to bottom,#000 70%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,#000 55%),linear-gradient(to bottom,#000 70%,transparent 100%);mask-composite:intersect;filter:grayscale(1)}
   :root[data-theme="light"] .hero-bg::before{opacity:.14;mix-blend-mode:multiply}
   @media (max-width:760px){.hero-bg::before{width:100%;opacity:.14}}
   .hero-glow{position:absolute;z-index:1;width:640px;height:640px;right:-150px;top:-230px;background:radial-gradient(circle,rgba(79,227,212,.16),transparent 64%);pointer-events:none}
