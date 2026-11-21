@@ -41,7 +41,7 @@
 
   /* pathway tiles */
   .paths{position:relative;z-index:5;margin-top:-96px;padding:0 0 24px}
-  .paths .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+  .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
   .tile{display:flex;flex-direction:column;gap:14px;min-height:300px;background:var(--surface);border:1px solid var(--line-strong);border-radius:22px;padding:34px 32px 30px;box-shadow:var(--shadow-lg);color:var(--ink);transition:transform .2s ease,border-color .2s ease}
   .tile:hover{transform:translateY(-4px);border-color:var(--aqua);text-decoration:none}
   .tile .t-icon{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:var(--surface-2);color:var(--aqua)}
@@ -129,7 +129,7 @@
   .cta-band p{color:var(--on-navy-mut);margin-top:10px;max-width:56ch}
 
   @media (max-width:920px){
-    .paths .tiles{grid-template-columns:1fr}
+    .tiles{grid-template-columns:1fr}
     .tile{min-height:0}
     .svc-cards,.split-2,.contact-grid{grid-template-columns:1fr}
     .exp-strip{grid-template-columns:1fr 1fr}
