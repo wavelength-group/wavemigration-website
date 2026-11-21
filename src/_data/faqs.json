@@ -1,0 +1,66 @@
+{
+  "groups": [
+    {
+      "title": "Health professionals",
+      "items": [
+        {
+          "q": "How long does AHPRA registration take for an international medical graduate (IMG)?",
+          "a": "Processing times start from around six weeks but vary depending on your pathway, medical specialty and individual circumstances. Some specialist international medical graduates (SIMGs) also need a specialist college assessment before applying to AHPRA. Our regulatory team guides you through each step, prepares and reviews your documentation and manages any requests for further information."
+        },
+        {
+          "q": "Do I need to sit the AMC exam as an internationally trained doctor?",
+          "a": "Not necessarily. It depends on your registration pathway. The Standard pathway generally requires AMC examinations, while the Competent Authority, Expedited Specialist and Specialist pathways do not. A period of supervised practice may still apply."
+        },
+        {
+          "q": "What is the difference between general, specialist, provisional and limited registration?",
+          "a": "General registration allows a doctor to practise within their competence and scope of practice. Specialist registration recognises a doctor as a specialist in an approved medical specialty. Provisional registration is for doctors completing supervised practice before general registration, and is common on the Competent Authority pathway. Limited registration is granted for a specific purpose, position or training program and may include conditions on where, how or under whose supervision a doctor can practise."
+        },
+        {
+          "q": "Is the Expedited Specialist Pathway the same as RACGP Fellowship?",
+          "a": "No. The Expedited Specialist Pathway (ESP) leads to specialist registration with AHPRA and specialist recognition with Medicare, but it is not Fellowship of the RACGP and is not a pathway to Fellowship. You can apply to the RACGP for Fellowship separately later on."
+        },
+        {
+          "q": "What is the ten-year moratorium?",
+          "a": "Under section 19AB of the Health Insurance Act 1973, most IMGs must work in a Distribution Priority Area (DPA), or a District of Workforce Shortage for specialists, to access Medicare benefits for up to ten years from their first Australian medical registration. Some exemptions apply, such as the spousal exemption. We'll advise on the options available to you."
+        },
+        {
+          "q": "Can I bring my family to Australia when I come to work as a doctor?",
+          "a": "Yes, in many cases. Employer-sponsored visas such as the Skills in Demand visa (subclass 482) and the Employer Nomination Scheme visa (subclass 186) allow eligible family members to be included, which may include your spouse or partner and dependent children. Their work and study rights depend on the visa granted. Our registered migration agents can assess your family's eligibility and manage their applications alongside yours."
+        },
+        {
+          "q": "Which documents need to be certified or translated?",
+          "a": "You'll need certified copies of the documents for each application. If you're outside Australia, they must be certified by a Notary Public. Any document not in English needs a full certified English translation. Your regulatory consultant will give you a checklist and tell you when to order items such as Certificates of Good Standing and criminal history checks."
+        }
+      ]
+    },
+    {
+      "title": "Healthcare employers",
+      "items": [
+        {
+          "q": "We have sourced our own doctor. Can you help with their registration and migration applications?",
+          "a": "Yes. Wavelength's regulatory and migration services are available to healthcare employers independently of our medical recruitment services."
+        },
+        {
+          "q": "Can you help us sponsor an overseas-trained doctor?",
+          "a": "Yes. Our registered migration agents can assess your eligibility, recommend the right visa pathway and manage sponsorship, nomination and visa applications alongside the doctor's registration."
+        },
+        {
+          "q": "What does sponsoring a doctor on a Skills in Demand (482) visa involve?",
+          "a": "Three applications: sponsorship (your practice is approved as a Standard Business Sponsor, if it isn't already), nomination (the position is approved, with a Skilling Australians Fund levy for each nominated year) and the visa itself. If you're not yet an approved sponsor, you'll need to show your business is actively operating, including financials. We prepare and lodge each step for you."
+        },
+        {
+          "q": "How long does the whole registration and visa process take?",
+          "a": "It depends on the pathway. As a guide, registration and visa together take around five months on the Expedited Specialist Pathway and six to twelve months on the RACGP Practice Experience Program, depending on regulator and Department of Home Affairs workloads. We keep you updated at every stage."
+        },
+        {
+          "q": "What are AHPRA's supervision requirements for internationally trained doctors?",
+          "a": "Supervision depends on the doctor's registration pathway, experience, proposed position and any requirements set by the Medical Board of Australia or the relevant specialist college. Contact our team at rms@wave.com.au and we'll advise on your situation."
+        },
+        {
+          "q": "What are the different levels of medical supervision?",
+          "a": "Level 1: the supervisor takes direct and principal responsibility for each patient. Level 2: the supervisor and the IMG share responsibility for each patient. Level 3: the IMG takes primary responsibility, with the supervisor available for guidance. Level 4: the IMG takes full responsibility, with oversight in line with the approved supervision plan."
+        }
+      ]
+    }
+  ]
+}

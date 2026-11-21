@@ -19,11 +19,25 @@ eleventyComputed:
   <section style="padding-top:56px">
     <div class="wrap split-2">
       <div class="prose-block">
-        <div class="todo"><b>Content to come</b><span>The migration team will supply the full write-up for this page: what the service is, who it is for, how the process works and typical timeframes.</span></div>
-        <h2>What&rsquo;s involved</h2>
-        <p>Placeholder text. A plain-English explanation of {{ svc.title | lower }} for doctors who have heard the term but are not sure what it means or whether it applies to them.</p>
-        <h2>How we help</h2>
-        <p>Placeholder text. How a dedicated in-house consultant manages the application from start to finish.</p>
+        {%- if svc.sections %}
+        <p class="lead-in">{{ svc.intro }}</p>
+        {%- for sec in svc.sections %}
+        <h2>{{ sec.h }}</h2>
+        {%- for para in sec.p %}
+        <p>{{ para }}</p>
+        {%- endfor %}
+        {%- if sec.ul %}
+        <ul class="prose-list">
+          {%- for li in sec.ul %}
+          <li>{{ li | safe }}</li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+        {%- endfor %}
+        <p class="fine-note">General information only, not migration or legal advice. Requirements and timeframes change, so contact us for advice on your circumstances.</p>
+        {%- else %}
+        <div class="todo"><b>Content to come</b><span>The migration team will supply the full write-up for this page.</span></div>
+        {%- endif %}
       </div>
       <aside class="side-card">
         <h3>Includes</h3>

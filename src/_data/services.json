@@ -4,31 +4,235 @@
       "slug": "australian-medical-registration",
       "title": "Australian Medical Registration",
       "summary": "Assistance with AHPRA and Medical Board of Australia registration applications.",
-      "points": ["AHPRA registration applications", "Medical Board of Australia requirements", "Primary Source Verification through AMC and EPIC"]
+      "points": [
+        "AHPRA registration applications",
+        "Medical Board of Australia requirements",
+        "Primary Source Verification through AMC and EPIC"
+      ],
+      "intro": "Every international medical graduate (IMG) needs registration with the Medical Board of Australia, through AHPRA, before they can practise. The right pathway depends on your qualifications, specialty, country of training and recent practice, and our regulatory team will identify it for you at the start.",
+      "sections": [
+        {
+          "h": "Registration pathways",
+          "p": [
+            "There are four main pathways for internationally trained doctors. Whether you need to sit AMC exams depends on which one applies to you."
+          ],
+          "ul": [
+            "<b>Competent Authority pathway</b> for doctors who trained or passed exams in a recognised comparable health system. Usually leads to provisional registration with supervised practice, then general registration.",
+            "<b>Expedited Specialist Pathway (ESP)</b> lets eligible specialists fast-track specialist registration without an individual college assessment. For GPs, accepted qualifications include MRCGP (UK) with CCT from 2007, MICGP with CSCST from 2009 and FRNZCGP from 2012. ESP leads to specialist registration but is not a pathway to RACGP Fellowship.",
+            "<b>Specialist pathway</b> for specialist IMGs assessed by the relevant specialist medical college, such as the RACGP Practice Experience Program (PEP) Specialist stream.",
+            "<b>Standard pathway</b> generally requires AMC examinations before general registration."
+          ]
+        },
+        {
+          "h": "Types of registration",
+          "ul": [
+            "<b>General registration</b> lets a doctor practise within their competence and scope of practice.",
+            "<b>Specialist registration</b> recognises a doctor as a specialist in an approved medical specialty.",
+            "<b>Provisional registration</b> is for doctors completing supervised practice before general registration, and is common on the Competent Authority pathway.",
+            "<b>Limited registration</b> is granted for a specific purpose, position or training program and may carry conditions on where, how or under whose supervision you practise."
+          ]
+        },
+        {
+          "h": "What you'll need",
+          "p": [
+            "Most applications share a set of standard requirements. Your regulatory consultant will tell you when to order each item so nothing expires or holds up your application."
+          ],
+          "ul": [
+            "Primary Source Verification of your medical degree and specialist qualifications through the AMC and EPIC",
+            "Evidence that you meet AHPRA's English Language Skills Standard",
+            "Recency of practice: at least 152 hours in one registration period, or 456 hours over three consecutive periods",
+            "Certificates of Good Standing from every jurisdiction you've been registered in over the past ten years, sent directly by the issuing authority",
+            "International Criminal History Checks for any country you've lived in for six months or more since age 18",
+            "Certified copies of documents (certified by a Notary Public if you're outside Australia) and certified English translations where needed"
+          ]
+        },
+        {
+          "h": "How long it takes",
+          "p": [
+            "AHPRA processing starts from around six weeks but varies with your pathway, specialty and circumstances. Some specialists also need a college assessment first. Supervised practice may apply even when exams don't."
+          ]
+        },
+        {
+          "h": "How we help",
+          "p": [
+            "Your dedicated regulatory consultant confirms your pathway, prepares and reviews your application, coordinates every supporting document and manages any requests from AHPRA or the college, so your registration keeps moving and your start date holds."
+          ]
+        }
+      ]
     },
     {
       "slug": "new-zealand-medical-registration",
       "title": "New Zealand Medical Registration",
       "summary": "Support with Medical Council of New Zealand registration applications.",
-      "points": ["Vocational registration", "Provisional general registration", "Locum tenens applications"]
+      "points": [
+        "Vocational registration",
+        "Provisional general registration",
+        "Locum tenens applications"
+      ],
+      "intro": "Moving to New Zealand? Doctors need registration with the Medical Council of New Zealand (MCNZ) before they can practise. Our team manages MCNZ applications for international doctors and the employers recruiting them.",
+      "sections": [
+        {
+          "h": "Registration we support",
+          "ul": [
+            "<b>Vocational registration</b> for specialists whose training and experience are assessed as equivalent to a New Zealand vocational scope.",
+            "<b>Provisional general registration</b> for doctors entering general scope, usually starting with a period of supervised practice.",
+            "<b>Locum tenens</b> applications for specialists covering short-term positions."
+          ]
+        },
+        {
+          "h": "What you'll need",
+          "p": [
+            "MCNZ applications rely on verified credentials, so we start with Primary Source Verification of your qualifications through EPIC. We then help you gather certificates of good standing, evidence of English language proficiency and the details of your proposed role and supervision."
+          ]
+        },
+        {
+          "h": "How we help",
+          "p": [
+            "We identify the right registration pathway, prepare and review your application, coordinate your supporting documents and keep you updated until registration is approved, with the same dedicated support we provide for Australian registration."
+          ]
+        }
+      ]
     },
     {
       "slug": "specialist-college-applications",
       "title": "Specialist College Applications",
       "summary": "Assistance with specialist college assessments and applications, including RACGP PEP Specialist pathways and Area of Need.",
-      "points": ["Specialist college assessments", "RACGP PEP Specialist pathway", "Area of Need applications"]
+      "points": [
+        "Specialist college assessments",
+        "RACGP PEP Specialist pathway",
+        "Area of Need applications"
+      ],
+      "intro": "Many specialist international medical graduates (SIMGs) need an assessment by their specialist medical college before they can be registered. We guide doctors through college applications across specialties, including general practice, physicians, pathology and ophthalmology.",
+      "sections": [
+        {
+          "h": "RACGP Practice Experience Program (PEP) Specialist stream",
+          "p": [
+            "The PEP Specialist stream is the registration pathway for IMGs with a recognised overseas GP qualification who want initial registration in Australia and a pathway to Fellowship of the RACGP (FRACGP)."
+          ],
+          "ul": [
+            "<b>Part A: comparability assessment.</b> The RACGP assesses you as substantially comparable (working with limited oversight) or partially comparable (working under supervision and reaching comparability within 24 months full-time equivalent).",
+            "<b>Part B: job offer approval.</b> The role must be in comprehensive general practice, in a Distribution Priority Area (DPA) and an MM 2 to 7 location (substantially comparable doctors may work in MM 1), with the supervision level your assessment requires.",
+            "<b>Registration and provider number.</b> You then apply to AHPRA for limited or provisional registration, followed by your Medicare provider number.",
+            "<b>Fellowship.</b> Substantially comparable doctors complete workplace-based assessment, online learning, multi-source feedback and a clinical assessment, and must achieve FRACGP within 12 months full-time. Partially comparable doctors also sit the AKT, KFP and CCE exams within 24 months full-time."
+          ]
+        },
+        {
+          "h": "RACGP Fellowship Support Program (FSP)",
+          "p": [
+            "The FSP is a self-funded education program for GPs without vocational registration who are working towards FRACGP. It runs for 24 months of education and training, followed by up to 36 months to complete the Fellowship exams, with intakes in January and July. You'll need to be working, or have an offer, in an accredited comprehensive general practice in an MM 2 to 7 location (and a DPA if section 19AB applies), with an accredited onsite supervisor."
+          ]
+        },
+        {
+          "h": "Other specialist colleges",
+          "p": [
+            "We also support specialist college assessments and Area of Need applications for other specialties, helping you compile documentation, review your application and prepare for interview."
+          ]
+        },
+        {
+          "h": "How we help",
+          "p": [
+            "College applications are detailed and time-consuming. Our regulatory team prepares and reviews your application, coordinates supporting evidence and keeps your registration, Medicare and visa steps moving at the same time."
+          ]
+        }
+      ]
     },
     {
       "slug": "medicare-provider-numbers",
       "title": "Medicare & Provider Numbers",
       "summary": "Support with Medicare provider number applications and section 19AB exemptions.",
-      "points": ["Medicare provider and prescriber numbers", "Section 19AB exemptions", "DPA and DWS advice"]
+      "points": [
+        "Medicare provider and prescriber numbers",
+        "Section 19AB exemptions",
+        "DPA and DWS advice"
+      ],
+      "intro": "To bill Medicare in Australia, you'll generally need a Medicare provider number for each location where you practise, plus a prescriber number. We manage the applications and advise on any restrictions or exemptions that apply to you.",
+      "sections": [
+        {
+          "h": "Section 19AB and the ten-year moratorium",
+          "p": [
+            "International medical graduates (IMGs) and foreign graduates of accredited medical schools (FGAMS) are subject to section 19AB of the Health Insurance Act 1973. To access Medicare benefits, you'll generally need to work in a Distribution Priority Area (DPA) for up to ten years from your first medical registration in Australia. Specialists are assessed against District of Workforce Shortage (DWS) classifications instead."
+          ]
+        },
+        {
+          "h": "Distribution Priority Areas (DPA)",
+          "p": [
+            "The DPA classification identifies locations with a shortage of GP services, based on Medicare billings, population demographics, socioeconomic status and remoteness under the Modified Monash Model (MM 1 is a major city, MM 7 is very remote). Some blanket rules apply:"
+          ],
+          "ul": [
+            "Inner metropolitan areas are automatically non-DPA",
+            "MM 2 to 7 locations are automatically DPA",
+            "The Northern Territory and Tasmania are automatically DPA"
+          ]
+        },
+        {
+          "h": "Exemptions",
+          "p": [
+            "Section 19AB exemptions can open up locations outside a DPA. One example is the spousal exemption, which lets an eligible doctor access Medicare benefits near their spouse's workplace when the spouse is an Australian-based doctor without 19AB restrictions, or a skilled migrant working in their nominated occupation. We advise on which exemptions you may qualify for, including academic exemptions, and manage the application."
+          ]
+        },
+        {
+          "h": "How long it takes",
+          "p": [
+            "Provider number applications are lodged once your registration and visa (if needed) are finalised, and generally take between four and twelve weeks depending on your pathway. Doctors on the Expedited Specialist Pathway receive specialist recognition and can bill specialist rates."
+          ]
+        },
+        {
+          "h": "How we help",
+          "p": [
+            "We confirm your eligibility, check the location and DPA or DWS status of your role, prepare the provider and prescriber number applications, request any employer support letters and lodge exemption applications where needed."
+          ]
+        }
+      ]
     },
     {
       "slug": "australian-visas-migration",
       "title": "Australian Visas & Migration",
       "summary": "Migration assistance with our registered migration agents.",
-      "points": ["Employer sponsorship and nomination", "Skills in Demand (482) and Employer Nomination Scheme (186) visas", "Visas for family members"]
+      "points": [
+        "Employer sponsorship and nomination",
+        "Skills in Demand (482) and Employer Nomination Scheme (186) visas",
+        "Visas for family members"
+      ],
+      "intro": "Our in-house registered migration agents manage employer sponsorship, nomination and visa applications for doctors, health professionals and their families, alongside their registration so nothing falls through the cracks.",
+      "sections": [
+        {
+          "h": "Skills in Demand visa (subclass 482)",
+          "p": [
+            "The Skills in Demand visa is the main entry pathway for doctors working in Australia. It's an employer-sponsored temporary visa granted for one to four years, depending on the period the employer nominates. It involves three applications:"
+          ],
+          "ul": [
+            "<b>Sponsorship:</b> the practice or health service is approved as a Standard Business Sponsor (if it isn't already)",
+            "<b>Nomination:</b> the position is approved and the doctor identified, with a Skilling Australians Fund (SAF) levy for each nominated year",
+            "<b>Visa:</b> our migration agent applies for the visa for the doctor and their family"
+          ]
+        },
+        {
+          "h": "What doctors should expect",
+          "ul": [
+            "Police checks for every applicant aged 17 or over, from each country lived in for 12 months or more in the past ten years",
+            "Visa medical examinations for you and, where required, your family",
+            "Conditions to keep working in your nominated occupation and to hold adequate health insurance"
+          ]
+        },
+        {
+          "h": "Permanent residency and family visas",
+          "p": [
+            "The Employer Nomination Scheme visa (subclass 186) offers a permanent pathway for eligible doctors. Many employer-sponsored visas also let you include your spouse or partner and dependent children, so the whole family can make the move together."
+          ]
+        },
+        {
+          "h": "How long it takes",
+          "p": [
+            "Healthcare 482 applications now receive the highest processing priority. Overall, registration and visa together typically take around five months on the Expedited Specialist Pathway, and six to twelve months on the RACGP PEP Specialist stream, depending on regulator and Department of Home Affairs workloads."
+          ]
+        },
+        {
+          "h": "How we help",
+          "p": [
+            "Our MARA-registered migration agents assess your options, prepare and lodge sponsorship, nomination and visa applications, and keep employers and doctors updated at every stage. Our services are also available to employers who have sourced their own doctor."
+          ]
+        }
+      ]
     }
   ]
 }

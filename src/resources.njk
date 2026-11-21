@@ -14,21 +14,34 @@ permalink: /resources/index.html
 
   <section id="guides" style="padding-top:56px">
     <div class="wrap">
-      <div class="sec-head"><p class="eyebrow">Helpful guides &amp; resources</p><h2>Guides</h2></div>
-      <div class="todo"><b>Content to come</b><span>Downloadable guides and checklists will be added here as the team prepares them.</span></div>
+      <div class="sec-head"><p class="eyebrow">Helpful guides &amp; resources</p><h2>Free pathway guides</h2><p>Step-by-step guides written by our regulatory and migration team. Ask for a copy and we&rsquo;ll send you the guide that fits your situation.</p></div>
+      <div class="svc-cards">
+        <div class="svc-card"><h3>Expedited Specialist Pathway (ESP)</h3><p>For GPs with UK, Irish or New Zealand qualifications: eligibility, supervision, Medicare and the 482 visa. Editions for doctors and for employers.</p></div>
+        <div class="svc-card"><h3>RACGP Practice Experience Program (PEP)</h3><p>The Specialist stream explained for employers, from comparability assessment and job approval to Fellowship and visas.</p></div>
+        <div class="svc-card"><h3>RACGP Fellowship Support Program (FSP)</h3><p>For GPs working towards FRACGP: program structure, eligibility, supervision, exams and practice requirements.</p></div>
+        <div class="svc-card"><h3>DPA and spousal exemption</h3><p>How Distribution Priority Areas, section 19AB and the spousal exemption affect where you can work.</p></div>
+      </div>
+      <p style="margin-top:26px"><a href="/contact/" class="btn btn-primary">Request a guide</a></p>
     </div>
   </section>
 
   <section id="faqs" class="band">
     <div class="wrap">
       <div class="sec-head"><p class="eyebrow">Frequently asked questions</p><h2>FAQs</h2></div>
+      {%- for g in faqs.groups %}
+      <h3 class="faq-group">{{ g.title }}</h3>
       <div class="faq">
-        <details><summary>Placeholder question one</summary><p>Answer to come. The migration team will supply the questions doctors and employers ask most often.</p></details>
-        <details><summary>Placeholder question two</summary><p>Answer to come.</p></details>
-        <details><summary>Placeholder question three</summary><p>Answer to come.</p></details>
+        {%- for f in g.items %}
+        <details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>
+        {%- endfor %}
       </div>
+      {%- endfor %}
+      <p class="faq-more">Can&rsquo;t find your answer? <a href="/contact/">Ask our team</a> and we&rsquo;ll respond within 48 hours.</p>
     </div>
   </section>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{%- for g in faqs.groups %}{%- for f in g.items %}{"@type":"Question","name":{{ f.q | dump | safe }},"acceptedAnswer":{"@type":"Answer","text":{{ f.a | dump | safe }}}}{% if not loop.last %},{% endif %}{%- endfor %}{% if not loop.last %},{% endif %}{%- endfor %}]}
+</script>
 
   <section id="news">
     <div class="wrap">
