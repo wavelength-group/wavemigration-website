@@ -1,0 +1,13 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in collections.all %}{% if p.url and not p.url.startsWith("/admin") %}
+  <url><loc>https://wavemigrationservices.com{{ p.url }}</loc>{% if "post" in (p.data.tags or []) %}<lastmod>{{ p.date | isoDate }}</lastmod>{% endif %}</url>
+{%- endif %}{% endfor %}
+{%- for s in services.items %}{% if loop.index0 > 0 %}
+  <url><loc>https://wavemigrationservices.com/services/{{ s.slug }}/</loc></url>
+{%- endif %}{% endfor %}
+</urlset>

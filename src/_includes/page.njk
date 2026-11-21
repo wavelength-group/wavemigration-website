@@ -1,9 +1,22 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
-<title>{% if title and page.url != "/" %}{{ title }} | {% endif %}Wavelength Migration Services{% if page.url == "/" %} | Healthcare registration and migration{% endif %}</title>
+<title>{% if page.url == "/" %}Medical Registration &amp; Visas for Doctors | Wavelength Migration{% else %}{% if title %}{{ title | safe }} | {% endif %}Wavelength Migration Services{% endif %}</title>
 <meta name="description" content="{{ description or 'Wavelength Migration Services is the specialist regulatory and migration partner for Australia and New Zealand’s health sector, for employers and international health professionals.' }}">
 <link rel="canonical" href="https://wavemigrationservices.com{{ page.url }}">
+{%- set ogDesc = description or 'Wavelength Migration Services is the specialist regulatory and migration partner for Australia and New Zealand’s health sector, for employers and international health professionals.' %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wavelength Migration Services">
+<meta property="og:title" content="{% if page.url == '/' %}Healthcare registration and migration specialists{% else %}{{ title | safe }}{% endif %} | Wavelength Migration Services">
+<meta property="og:description" content="{{ ogDesc }}">
+<meta property="og:url" content="https://wavemigrationservices.com{{ page.url }}">
+<meta property="og:locale" content="en_AU">
+<meta name="twitter:card" content="summary">
+{%- if page.url == "/" %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Wavelength Migration Services","url":"https://wavemigrationservices.com/","logo":"https://wavemigrationservices.com/assets/img/mark.svg","description":"Specialist medical registration and migration services for health employers and international health professionals in Australia and New Zealand.","email":"rms@wave.com.au","areaServed":[{"@type":"Country","name":"Australia"},{"@type":"Country","name":"New Zealand"}],"parentOrganization":{"@type":"Organization","name":"Wavelength Group","url":"https://www.wavepeople.com"},"knowsAbout":["AHPRA registration","Medical Council of New Zealand registration","Primary Source Verification","Specialist college applications","Medicare provider numbers","Section 19AB exemptions","Area of Need","District of Workforce Shortage","Skills in Demand visa subclass 482","Employer Nomination Scheme visa subclass 186"]}
+</script>
+{%- endif %}
 {% include "head.njk" %}
 </head>
 <body>
