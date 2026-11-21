@@ -4,16 +4,16 @@
       "title": "Health professionals",
       "items": [
         {
-          "q": "How long does AHPRA registration take for an international medical graduate (IMG)?",
-          "a": "Processing times start from around six weeks but vary depending on your pathway, medical specialty and individual circumstances. Some specialist international medical graduates (SIMGs) also need a specialist college assessment before applying to AHPRA. Our regulatory team guides you through each step, prepares and reviews your documentation and manages any requests for further information."
+          "q": "How quickly can I be registered with AHPRA?",
+          "a": "Allow at least six weeks once AHPRA has a complete application, and longer for some pathways. If your specialty requires a college assessment first, that adds time before AHPRA can start. We build a realistic timeline with you at the outset and handle any follow-up questions from AHPRA so your file keeps moving."
         },
         {
-          "q": "Do I need to sit the AMC exam as an internationally trained doctor?",
-          "a": "Not necessarily. It depends on your registration pathway. The Standard pathway generally requires AMC examinations, while the Competent Authority, Expedited Specialist and Specialist pathways do not. A period of supervised practice may still apply."
+          "q": "Will I have to pass AMC exams?",
+          "a": "Only on some pathways. AMC exams are usually part of the Standard pathway, but doctors on the Competent Authority, Expedited Specialist or Specialist pathways normally skip them. Bear in mind you may still need to complete a period of supervised practice once you start work."
         },
         {
-          "q": "What is the difference between general, specialist, provisional and limited registration?",
-          "a": "General registration allows a doctor to practise within their competence and scope of practice. Specialist registration recognises a doctor as a specialist in an approved medical specialty. Provisional registration is for doctors completing supervised practice before general registration, and is common on the Competent Authority pathway. Limited registration is granted for a specific purpose, position or training program and may include conditions on where, how or under whose supervision a doctor can practise."
+          "q": "Which type of medical registration will I hold?",
+          "a": "It depends on your pathway. Provisional registration covers a period of supervised practice and is the usual starting point on the Competent Authority pathway. Limited registration is tied to a particular role, purpose or program and often carries conditions. General registration lets you work across your scope of practice, and specialist registration recognises you as a specialist in an approved field. Many IMGs start on provisional or limited registration and progress from there."
         },
         {
           "q": "Is the Expedited Specialist Pathway the same as RACGP Fellowship?",
@@ -24,8 +24,8 @@
           "a": "Under section 19AB of the Health Insurance Act 1973, most IMGs must work in a Distribution Priority Area (DPA), or a District of Workforce Shortage for specialists, to access Medicare benefits for up to ten years from their first Australian medical registration. Some exemptions apply, such as the spousal exemption. We'll advise on the options available to you."
         },
         {
-          "q": "Can I bring my family to Australia when I come to work as a doctor?",
-          "a": "Yes, in many cases. Employer-sponsored visas such as the Skills in Demand visa (subclass 482) and the Employer Nomination Scheme visa (subclass 186) allow eligible family members to be included, which may include your spouse or partner and dependent children. Their work and study rights depend on the visa granted. Our registered migration agents can assess your family's eligibility and manage their applications alongside yours."
+          "q": "Can my partner and children come with me?",
+          "a": "Usually, yes. The main employer-sponsored visas for doctors, the Skills in Demand visa (subclass 482) and the Employer Nomination Scheme visa (subclass 186), let you include a spouse or partner and dependent children who meet the criteria. What they can do in Australia, such as work or study, depends on the visa. Our migration agents check each family member's eligibility and lodge their applications with yours."
         },
         {
           "q": "Which documents need to be certified or translated?",
@@ -37,12 +37,12 @@
       "title": "Healthcare employers",
       "items": [
         {
-          "q": "We have sourced our own doctor. Can you help with their registration and migration applications?",
-          "a": "Yes. Wavelength's regulatory and migration services are available to healthcare employers independently of our medical recruitment services."
+          "q": "We've found a doctor ourselves. Can you still manage the paperwork?",
+          "a": "Absolutely. You don't need to recruit through Wavelength to use our regulatory and migration services. Many health services engage us purely to handle registration, Medicare and visas for doctors they've hired directly."
         },
         {
-          "q": "Can you help us sponsor an overseas-trained doctor?",
-          "a": "Yes. Our registered migration agents can assess your eligibility, recommend the right visa pathway and manage sponsorship, nomination and visa applications alongside the doctor's registration."
+          "q": "Do you handle visa sponsorship for employers?",
+          "a": "Yes. Our MARA-registered migration agents confirm whether your organisation can sponsor, choose the right visa and manage sponsorship, nomination and visa applications, timed to line up with the doctor's registration."
         },
         {
           "q": "What does sponsoring a doctor on a Skills in Demand (482) visa involve?",
@@ -53,12 +53,12 @@
           "a": "It depends on the pathway. As a guide, registration and visa together take around five months on the Expedited Specialist Pathway and six to twelve months on the RACGP Practice Experience Program, depending on regulator and Department of Home Affairs workloads. We keep you updated at every stage."
         },
         {
-          "q": "What are AHPRA's supervision requirements for internationally trained doctors?",
-          "a": "Supervision depends on the doctor's registration pathway, experience, proposed position and any requirements set by the Medical Board of Australia or the relevant specialist college. Contact our team at rms@wave.com.au and we'll advise on your situation."
+          "q": "What supervision will an overseas-trained doctor need?",
+          "a": "It varies with the doctor's pathway, experience and role, and with any conditions set by the Medical Board of Australia or the specialist college. We'll tell you what applies before you make an offer, so you can confirm a suitable supervisor early. Email rms@wave.com.au to talk it through."
         },
         {
-          "q": "What are the different levels of medical supervision?",
-          "a": "Level 1: the supervisor takes direct and principal responsibility for each patient. Level 2: the supervisor and the IMG share responsibility for each patient. Level 3: the IMG takes primary responsibility, with the supervisor available for guidance. Level 4: the IMG takes full responsibility, with oversight in line with the approved supervision plan."
+          "q": "How do the four supervision levels work?",
+          "a": "Supervision runs from Level 1 to Level 4, with the doctor taking on more responsibility at each step. At Level 1 the supervisor is directly responsible for every patient and must be on site. At Level 2 responsibility is shared, and the supervisor is physically present most of the time. At Level 3 the doctor takes primary responsibility and can work alone, with the supervisor contactable by phone or video. At Level 4 the doctor is fully responsible, with the supervisor reviewing their practice periodically."
         }
       ]
     }
