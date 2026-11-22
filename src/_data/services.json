@@ -9,17 +9,17 @@
         "Medical Board of Australia requirements",
         "Primary Source Verification through AMC and EPIC"
       ],
-      "intro": "Every international medical graduate (IMG) needs registration with the Medical Board of Australia, through AHPRA, before they can practise. The right pathway depends on your qualifications, specialty, country of training and recent practice, and our regulatory team will identify it for you at the start.",
+      "intro": "Whether you are a doctor, nurse, radiation practitioner or GP, you will need to obtain registration with the relevant Medical Board of Australia, through AHPRA, in order to practise. The right pathway depends on your qualifications, specialty, country of training and your intentions in Australia, and our regulatory team will identify it for you at the start.",
       "sections": [
         {
-          "h": "Registration pathways",
+          "h": "Registration pathways for doctors",
           "p": [
             "There are four main pathways for internationally trained doctors. Whether you need to sit AMC exams depends on which one applies to you."
           ],
           "ul": [
             "<b>Competent Authority pathway</b> for doctors who trained or passed exams in a recognised comparable health system. Usually leads to provisional registration with supervised practice, then general registration.",
-            "<b>Expedited Specialist Pathway (ESP)</b> lets eligible specialists fast-track specialist registration without an individual college assessment. For GPs, accepted qualifications include MRCGP (UK) with CCT from 2007, MICGP with CSCST from 2009 and FRNZCGP from 2012. ESP leads to specialist registration but is not a pathway to RACGP Fellowship.",
-            "<b>Specialist pathway</b> for specialist IMGs assessed by the relevant specialist medical college, such as the RACGP Practice Experience Program (PEP) Specialist stream.",
+            "<b>Expedited Specialist Pathway (ESP)</b> lets eligible specialists fast-track specialist registration without an individual college assessment. For GPs, accepted qualifications include MRCGP (UK) with CCT from 2007, MICGP with CSCST from 2009 and FRNZCGP from 2012.",
+            "<b>Specialist pathway</b> for overseas-trained specialists assessed by the relevant specialist medical college, such as the RACGP Practice Experience Program (PEP) Specialist stream. Allows you to obtain specialist registration once you complete the college requirements.",
             "<b>Standard pathway</b> generally requires AMC examinations before general registration."
           ]
         },
@@ -125,7 +125,7 @@
         {
           "h": "Other specialist colleges",
           "p": [
-            "We also support specialist college assessments and Area of Need applications for other specialties, helping you compile documentation, review your application and prepare for interview."
+            "We also support specialist college assessments and Area of Need applications for other specialties, including anaesthetists, O&G, surgeons and physicians. Our regulatory experts conduct a thorough review of your background and advise you of your eligibility and registration pathway options. We guide you through each step of the process, helping you compile documentation, review your application and prepare for interview."
           ]
         },
         {
@@ -173,7 +173,7 @@
         {
           "h": "How long it takes",
           "p": [
-            "Provider number applications are lodged once your registration and visa (if needed) are finalised, and generally take between four and twelve weeks depending on your pathway. Doctors on the Expedited Specialist Pathway receive specialist recognition and can bill specialist rates."
+            "Provider number applications are lodged once your registration and visa (if needed) are finalised, and generally take between four and eight weeks, depending on your pathway. Specialists may also need to apply for specialist recognition, if eligible, to bill at specialist rates."
           ]
         },
         {
@@ -230,6 +230,38 @@
           "h": "How we help",
           "p": [
             "Our MARA-registered migration agents assess your options, prepare and lodge sponsorship, nomination and visa applications, and keep employers and doctors updated at every stage. Our services are also available to employers who have sourced their own doctor."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nurses-other-professions",
+      "title": "Nurses & Other Professions",
+      "summary": "Assistance with AHPRA and National Board registration applications.",
+      "card": "The registration requirements for non-doctors are similar but have different steps.",
+      "points": [
+        "Nursing and Midwifery Board (NMBA) registration",
+        "Medical Radiation Practice Board registration",
+        "Sonographer assessment and accreditation"
+      ],
+      "intro": "We don’t just help doctors. If your profession requires registration with a National health practitioner board through AHPRA, then our experts can assist you.",
+      "sections": [
+        {
+          "h": "Nurses",
+          "p": [
+            "If you are an internationally qualified nurse or midwife, you will need to obtain registration with the NMBA. The first step will involve a self-check to be assigned into one of three streams. The requirements and process for registration vary depending on the stream that you are assigned to. We can help you with all of this."
+          ]
+        },
+        {
+          "h": "Medical Radiation Practitioners",
+          "p": [
+            "If you are an internationally qualified medical radiation practitioner, you will need to obtain registration with the Medical Radiation Practice Board of Australia. There are multiple pathways to registration, depending on your field of practice and whether your specific qualification has previously been assessed by AHPRA. We can assist you with a qualification assessment and the subsequent registration applications."
+          ]
+        },
+        {
+          "h": "Sonographers",
+          "p": [
+            "If you are an internationally qualified sonographer looking to work in Australia, you may need to do an ASMIRT assessment and then obtain ASAR accreditation. Our consultants can help you navigate these pathways."
           ]
         }
       ]
