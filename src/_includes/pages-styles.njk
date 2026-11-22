@@ -69,6 +69,18 @@
   .svc-card p{color:var(--muted);font-size:16px}
   .svc-card .go{margin-top:auto;font-weight:700;color:var(--teal-ink);font-size:15px}
 
+  /* jargon callout on the services page */
+  .callout{display:flex;gap:18px;align-items:flex-start;margin-top:28px;padding:26px 28px;background:var(--surface);border:1px solid var(--line-strong);border-left:4px solid var(--spark);border-radius:16px}
+  .callout-ic{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);color:var(--spark)}
+  .callout-ic svg{width:22px;height:22px}
+  .callout p{color:var(--ink);font-size:17px;max-width:72ch}
+  .callout .btn{margin-top:16px}
+  @media (max-width:560px){.callout{flex-direction:column;padding:22px}}
+
+  /* service chips that link to the service pages */
+  a.chip{text-decoration:none;transition:border-color .15s,color .15s}
+  a.chip:hover,a.chip:focus-visible{border-color:var(--aqua);color:var(--ink);text-decoration:none}
+
   /* placeholder notes for content still to come */
   .todo{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border:1px dashed var(--spark);border-radius:12px;color:var(--muted);font-size:15px;background:color-mix(in srgb,var(--spark) 6%,transparent)}
   .todo b{color:var(--spark);font-weight:700;white-space:nowrap}

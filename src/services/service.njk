@@ -57,10 +57,11 @@ eleventyComputed:
         {%- for s in services.items %}{% if s.slug != svc.slug %}
         <a class="svc-card" href="/services/{{ s.slug }}/">
           <h3>{{ s.title }}</h3>
-          <p>{{ s.summary }}</p>
+          <p>{{ s.card or s.summary }}</p>
           <span class="go">Read more &rarr;</span>
         </a>
         {%- endif %}{% endfor %}
       </div>
     </div>
   </section>
+{% include "cta-band.njk" %}

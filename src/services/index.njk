@@ -8,7 +8,7 @@ permalink: /services/index.html
     <div class="wrap">
       <p class="eyebrow">Our services</p>
       <h1>Support at every stage of the move</h1>
-      <p class="lead">Five services that cover the regulatory and migration work around a medical move. Each one has its own page, so you can read only what applies to you.</p>
+      <p class="lead">Common regulatory and migration applications required for a medical move. Each one has its own page, so you can read only what applies to you.</p>
     </div>
   </section>
   <section style="padding-top:56px">
@@ -17,10 +17,17 @@ permalink: /services/index.html
         {%- for s in services.items %}
         <a class="svc-card" href="/services/{{ s.slug }}/">
           <h2>{{ s.title }}</h2>
-          <p>{{ s.summary }}</p>
+          <p>{{ s.card or s.summary }}</p>
           <span class="go">Read more &rarr;</span>
         </a>
         {%- endfor %}
+      </div>
+      <div class="callout">
+        <span class="callout-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg></span>
+        <div>
+          <p>There are many other steps you may have heard of, such as Primary Source Verification, EPIC, the AMC, ICHC, English evidence, DWS and AON. Don&rsquo;t get bogged down with the jargon &ndash; reach out to our team and we&rsquo;ll tell you exactly what applies to you.</p>
+          <a href="/contact/" class="btn btn-primary">Talk to our team</a>
+        </div>
       </div>
     </div>
   </section>

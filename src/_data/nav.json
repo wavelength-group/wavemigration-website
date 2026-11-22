@@ -8,7 +8,8 @@
         { "label": "New Zealand Medical Registration", "url": "/services/new-zealand-medical-registration/" },
         { "label": "Specialist College Applications", "url": "/services/specialist-college-applications/" },
         { "label": "Medicare & Provider Numbers", "url": "/services/medicare-provider-numbers/" },
-        { "label": "Australian Visas & Migration", "url": "/services/australian-visas-migration/" }
+        { "label": "Australian Visas & Migration", "url": "/services/australian-visas-migration/" },
+        { "label": "Nurses & Other Professions", "url": "/services/nurses-other-professions/" }
       ]
     },
     {
