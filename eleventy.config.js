@@ -9,7 +9,7 @@ module.exports = function (eleventyConfig) {
     const fs = require("fs"), path = require("path");
     const recolour = {
       // Wave mark stays orange (Lagoon Glow secondary on dark; original brand orange on light)
-      "logo-dark.svg": [["#E87722", "#FF9A45"], ["#5FC5C9", "#4FE3D4"]],
+      "logo-dark.svg": [["#E87722", "#FF9A45"], ["#5FC5C9", "#00B9B5"]],
       "logo-light.svg": [["#033F3D", "#0B2E31"], ["#0C7A82", "#08807A"]],
       // Square mark (favicon, badges, card watermarks) in the same apricot as the logo wave on dark
       "mark.svg": [["#E87722", "#FF9A45"]],

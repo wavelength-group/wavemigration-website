@@ -1,9 +1,9 @@
 <style>
-  /* Midnight background palette (Nov 2026): dark blue-grey ground with the Lagoon Glow accents (aqua, orange). Dark only; the light block below is unused. */
+  /* Midnight background palette (Nov 2026): dark blue-grey ground with brand teal #00B9B5 and apricot accents. Dark only; the light block below is unused. */
   :root{
     --ground:#10171F;--surface:#18222D;--surface-2:#1F2B38;--ink:#EDF1F5;--muted:#9DACBC;
-    --navy:#0A0F15;--navy-2:#151E28;--indigo:#4FE3D4;--teal:#4FE3D4;--teal-deep:#7DEBDF;--teal-ink:#6BE8DB;
-    --aqua:#4FE3D4;--pink:#4FE3D4;--pink-deep:#3CCFC0;--pink-ink:#6BE8DB;--spark:#FF9A45;--on-accent:#10171F;
+    --navy:#0A0F15;--navy-2:#151E28;--indigo:#00B9B5;--teal:#00B9B5;--teal-deep:#4DD3CF;--teal-ink:#33CBC7;
+    --aqua:#00B9B5;--pink:#00B9B5;--pink-deep:#009C99;--pink-ink:#33CBC7;--spark:#FF9A45;--on-accent:#10171F;
     --line:#243241;--line-strong:#324458;--on-navy:#EDF1F5;--on-navy-mut:#9DACBC;
     --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -16px rgba(0,0,0,.6);
     --shadow-lg:0 1px 2px rgba(0,0,0,.35),0 28px 64px -30px rgba(0,0,0,.75);
@@ -57,7 +57,7 @@
   .hero .btn-ghost:hover{background:#E6EDF3;border-color:#E6EDF3;color:#10171F;transform:translateY(-1px)}
   :root[data-theme="light"] .hero .btn-ghost{border-color:var(--line-strong)}
   .btn-on-dark{background:var(--aqua);color:var(--navy)}
-  .btn-on-dark:hover{background:#7DEBDF;text-decoration:none;transform:translateY(-1px)}
+  .btn-on-dark:hover{background:#4DD3CF;text-decoration:none;transform:translateY(-1px)}
   .btn-outline-dark{background:transparent;color:var(--on-navy);border-color:rgba(157,172,188,.42)}
   .btn-outline-dark:hover{background:rgba(255,255,255,.07);text-decoration:none}
   .theme-toggle{width:40px;height:40px;border-radius:999px;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);cursor:pointer;display:grid;place-items:center;padding:0;transition:background .2s}
@@ -75,7 +75,7 @@
   .hero-bg::before{content:"";position:absolute;top:0;right:0;bottom:0;width:62%;background:url(/assets/img/hero-passport.svg) calc(100% + 240px) center/cover no-repeat;opacity:.26;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 55%),linear-gradient(to bottom,#000 70%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,#000 55%),linear-gradient(to bottom,#000 70%,transparent 100%);mask-composite:intersect;filter:grayscale(1)}
   :root[data-theme="light"] .hero-bg::before{opacity:.14;mix-blend-mode:multiply}
   @media (max-width:760px){.hero-bg::before{width:100%;opacity:.14}}
-  .hero-glow{position:absolute;z-index:1;width:640px;height:640px;right:-150px;top:-230px;background:radial-gradient(circle,rgba(79,227,212,.16),transparent 64%);pointer-events:none}
+  .hero-glow{position:absolute;z-index:1;width:640px;height:640px;right:-150px;top:-230px;background:radial-gradient(circle,rgba(0,185,181,.16),transparent 64%);pointer-events:none}
   .hero-eyebrow{color:var(--pink)}
   .hero h1{font-size:clamp(2.3rem,4.8vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1.06;color:var(--ink);max-width:16ch;margin:14px 0 0}
   .hero h1 .accent{color:var(--pink);font-style:italic}
@@ -180,7 +180,7 @@
   .contact-details{display:grid;gap:2px}
   .contact-details .row{display:flex;gap:14px;align-items:center;padding:16px 0;border-top:1px solid rgba(157,172,188,.22)}
   .contact-details .row:first-child{border-top:none}
-  .contact-details .ic{width:40px;height:40px;border-radius:10px;background:rgba(79,227,212,.14);color:var(--aqua);display:grid;place-items:center;flex:none}
+  .contact-details .ic{width:40px;height:40px;border-radius:10px;background:rgba(0,185,181,.14);color:var(--aqua);display:grid;place-items:center;flex:none}
   .contact-details .ic svg{width:19px;height:19px}
   .contact-details .k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--on-navy-mut)}
   .contact-details .v{color:#fff;font-weight:600;font-size:15.5px}
