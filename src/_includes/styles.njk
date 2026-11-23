@@ -2,8 +2,8 @@
   /* Midnight background palette (Nov 2026): dark blue-grey ground with brand teal #00B9B5 and apricot accents. Dark only; the light block below is unused. */
   :root{
     --ground:#10171F;--surface:#18222D;--surface-2:#1F2B38;--ink:#EDF1F5;--muted:#9DACBC;
-    --navy:#0A0F15;--navy-2:#151E28;--indigo:#00B9B5;--teal:#00B9B5;--teal-deep:#4DD3CF;--teal-ink:#33CBC7;
-    --aqua:#00B9B5;--pink:#00B9B5;--pink-deep:#009C99;--pink-ink:#33CBC7;--spark:#FF9A45;--on-accent:#10171F;
+    --navy:#0A0F15;--navy-2:#151E28;--indigo:#00B9B5;--teal:#00B9B5;--teal-deep:#4DD3CF;--teal-ink:#5ED6D2;
+    --aqua:#00B9B5;--pink:#00B9B5;--pink-deep:#009C99;--pink-ink:#5ED6D2;--spark:#FF9A45;--on-accent:#10171F;
     --line:#243241;--line-strong:#324458;--on-navy:#EDF1F5;--on-navy-mut:#9DACBC;
     --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -16px rgba(0,0,0,.6);
     --shadow-lg:0 1px 2px rgba(0,0,0,.35),0 28px 64px -30px rgba(0,0,0,.75);
@@ -29,7 +29,7 @@
   a{color:var(--teal-ink);text-decoration:none}
   a:hover{text-decoration:underline;text-underline-offset:3px}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
-  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--indigo);display:inline-flex;align-items:center;gap:9px}
+  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-ink);display:inline-flex;align-items:center;gap:9px}
   section{padding:96px 0}
   .lead{font-size:19px;color:var(--muted);max-width:64ch}
 
@@ -76,7 +76,7 @@
   :root[data-theme="light"] .hero-bg::before{opacity:.14;mix-blend-mode:multiply}
   @media (max-width:760px){.hero-bg::before{width:100%;opacity:.14}}
   .hero-glow{position:absolute;z-index:1;width:640px;height:640px;right:-150px;top:-230px;background:radial-gradient(circle,rgba(0,185,181,.16),transparent 64%);pointer-events:none}
-  .hero-eyebrow{color:var(--pink)}
+  .hero-eyebrow{color:var(--teal-ink)}
   .hero h1{font-size:clamp(2.3rem,4.8vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1.06;color:var(--ink);max-width:16ch;margin:14px 0 0}
   .hero h1 .accent{color:var(--pink);font-style:italic}
   .hero p.sub{margin:24px 0 0;font-size:19px;color:var(--muted);max-width:58ch}
@@ -90,7 +90,7 @@
   .split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:22px}
   .aud-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:34px 32px;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;gap:14px;transition:transform .2s ease}
   .aud-card:hover{transform:translateY(-3px)}
-  .aud-card .tag{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--indigo)}
+  .aud-card .tag{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-ink)}
   .aud-card h3{font-size:24px}
   .aud-card p{color:var(--muted);font-size:16px}
   .aud-icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);color:var(--indigo);margin-bottom:4px}
@@ -125,7 +125,7 @@
   .stat-card .foot{font-size:13.5px;color:var(--on-navy-mut);letter-spacing:.03em}
   .stat-card .cardmark{position:absolute;right:-24px;bottom:-24px;width:140px;height:140px;opacity:.16;transform:rotate(-8deg);display:block}
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-  .chip{font-size:13px;font-weight:600;color:var(--indigo);background:var(--surface-2);border:1px solid var(--line);padding:7px 13px;border-radius:999px}
+  .chip{font-size:13px;font-weight:600;color:var(--teal-ink);background:var(--surface-2);border:1px solid var(--line);padding:7px 13px;border-radius:999px}
 
   .band{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 
