@@ -1,0 +1,30 @@
+<style>
+  .consult-box{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:linear-gradient(135deg,color-mix(in srgb,var(--aqua) 12%,var(--surface)),var(--surface));border:1px solid var(--line-strong);border-left:4px solid var(--aqua);border-radius:20px;padding:30px 32px}
+  .consult-box h2{font-size:clamp(1.35rem,2.3vw,1.7rem)}
+  .consult-box p{margin-top:10px;color:var(--muted);font-size:16.5px;max-width:62ch}
+  .consult-box .price{display:flex;align-items:baseline;gap:8px;justify-content:flex-end}
+  .consult-box .price b{font-size:40px;font-weight:800;letter-spacing:-.02em;color:var(--ink);line-height:1}
+  .consult-box .price span{color:var(--muted);font-size:14px}
+  .consult-box .gst{font-size:13px;color:var(--muted);text-align:right;margin-top:4px}
+  .consult-box .acts{display:flex;flex-direction:column;align-items:flex-end;gap:10px;margin-top:14px}
+  .consult-box .more{font-size:14px;font-weight:700;color:var(--teal-ink)}
+  @media (max-width:760px){.consult-box{grid-template-columns:1fr}.consult-box .price,.consult-box .acts{justify-content:flex-start;align-items:flex-start}.consult-box .gst{text-align:left}}
+</style>
+<div class="consult-box">
+  <div>
+    <h2>Need personalised visa advice?</h2>
+    <p>Book an initial {{ booking.duration | replace(" minutes", "-minute") }} consultation with one of our registered migration agents. For {{ booking.price }}, one of our experts will explore your unique circumstances and advise you on the most appropriate visa pathway.</p>
+  </div>
+  <div>
+    <div class="price"><b>{{ booking.price }}</b><span>{{ booking.currency }} &middot; {{ booking.duration }}</span></div>
+    <div class="gst">{{ booking.gstNote }}</div>
+    <div class="acts">
+      {%- if booking.live and booking.paymentUrl %}
+      <a href="{{ booking.paymentUrl }}" class="btn btn-primary">Book and pay</a>
+      {%- else %}
+      <a href="/contact/?consult=1" class="btn btn-primary">Request a consultation</a>
+      {%- endif %}
+      <a href="/book-a-consultation/" class="more">What&rsquo;s included &rarr;</a>
+    </div>
+  </div>
+</div>

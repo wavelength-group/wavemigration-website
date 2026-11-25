@@ -1,0 +1,93 @@
+---
+layout: page.njk
+title: Book a Visa Consultation
+description: Book an initial 60-minute consultation with a registered migration agent. For $350 AUD, we explore your circumstances and advise on the most appropriate Australian visa pathway.
+permalink: /book-a-consultation/index.html
+---
+<style>
+  .bk-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
+  .bk-card{position:sticky;top:100px;background:var(--surface);border:1px solid var(--line-strong);border-radius:22px;padding:32px;box-shadow:var(--shadow-lg)}
+  .bk-card .lbl{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-ink)}
+  .bk-card h2{font-size:22px;margin-top:10px}
+  .bk-card .price{display:flex;align-items:baseline;gap:10px;margin-top:18px}
+  .bk-card .price b{font-size:52px;font-weight:800;letter-spacing:-.03em;line-height:1}
+  .bk-card .price span{color:var(--muted)}
+  .bk-card .gst{font-size:13.5px;color:var(--muted);margin-top:6px}
+  .bk-card ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+  .bk-card li{display:flex;gap:10px;font-size:15px;color:var(--ink)}
+  .bk-card li svg{flex:none;width:18px;height:18px;color:var(--teal-ink);margin-top:3px}
+  .bk-card .btn{width:100%;margin-top:24px}
+  .bk-card .note{font-size:13px;color:var(--muted);margin-top:12px;text-align:center}
+  .bk-steps{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:14px;counter-reset:bk}
+  .bk-steps li{counter-increment:bk;display:flex;gap:16px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .bk-steps li::before{content:counter(bk);flex:none;width:32px;height:32px;border-radius:50%;background:var(--spark);color:var(--on-accent);font-weight:800;display:grid;place-items:center}
+  .bk-steps b{display:block;color:var(--ink)}
+  .bk-steps span{color:var(--muted);font-size:15.5px}
+  .scope{margin-top:12px;background:var(--surface);border:1px solid var(--line-strong);border-left:4px solid var(--spark);border-radius:16px;padding:26px 28px;display:grid;gap:12px}
+  .scope h2{font-size:20px;margin:0}
+  .scope p{color:var(--muted);font-size:15.5px}
+  @media (max-width:920px){.bk-grid{grid-template-columns:1fr}.bk-card{position:static}}
+</style>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Visa consultation</p>
+      <h1>Book a visa consultation</h1>
+      <p class="lead">Need personalised visa advice? Book an initial 60-minute consultation with one of our registered migration agents. For {{ booking.price }}, one of our experts will explore your unique circumstances and advise you on the most appropriate visa pathway.</p>
+    </div>
+  </section>
+  <section style="padding-top:56px">
+    <div class="wrap bk-grid">
+      <div class="prose-block">
+        <h2 style="margin-top:0">What the consultation covers</h2>
+        <ul class="prose-list">
+          <li>A review of your circumstances, background and goals</li>
+          <li>Your eligibility for temporary and/or permanent Australian visa pathways</li>
+          <li>Advice on the most appropriate visa pathway for you</li>
+          <li>Delivered by one of our <a href="/about/#team">registered migration agents</a></li>
+        </ul>
+
+        <h2>How it works</h2>
+        <ol class="bk-steps">
+          {%- if booking.live and booking.paymentUrl %}
+          <li><div><b>Book and pay online</b><span>Pay securely by card. You&rsquo;ll receive a receipt and tax invoice straight away.</span></div></li>
+          {%- else %}
+          <li><div><b>Request your consultation</b><span>Send us your details and we&rsquo;ll email you a secure payment link.</span></div></li>
+          {%- endif %}
+          <li><div><b>Tell us when suits you</b><span>Let us know your preferred days and times, in your own time zone.</span></div></li>
+          <li><div><b>We confirm your appointment</b><span>We&rsquo;ll email you within one business day to confirm the time.</span></div></li>
+          <li><div><b>Meet your migration agent</b><span>Your 60-minute consultation takes place by video call.</span></div></li>
+        </ol>
+
+        <div class="scope">
+          <h2>Important &ndash; scope of the initial migration consultation</h2>
+          <p>The initial consultation is intended to provide advice on your eligibility for temporary and/or permanent Australian visa pathways.</p>
+          <p>Please note that the consultation does not assess your eligibility for AHPRA registration or employment opportunities/job placement.</p>
+          <p>For doctors, visa eligibility is generally dependent on meeting the relevant AHPRA registration requirements and securing a suitable position with an eligible employer.</p>
+          <p>Please also note that Wavelength&rsquo;s Regulatory &amp; Migration services operate separately from our Recruitment services. A positive visa eligibility assessment, including one that is subject to obtaining AHPRA registration, does not guarantee that Wavelength will be able to assist you in securing a suitable employment position in Australia through its recruitment services.</p>
+          <p>If you have not yet obtained, or assessed your eligibility for, professional registration or suitable employment, you may wish to seek registration and recruitment advice before booking a migration consultation.</p>
+          <p>Our migration consultation focuses exclusively on Australian visa eligibility and migration pathways.</p>
+        </div>
+      </div>
+
+      <aside class="bk-card">
+        <div class="lbl">Initial visa consultation</div>
+        <h2>One-on-one with a registered migration agent</h2>
+        <div class="price"><b>{{ booking.price }}</b><span>{{ booking.currency }}</span></div>
+        <div class="gst">{{ booking.gstNote }}</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>{{ booking.duration }}</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg>By video call</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>MARA-registered migration agent</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>Times to suit your time zone</li>
+        </ul>
+        {%- if booking.live and booking.paymentUrl %}
+        <a href="{{ booking.paymentUrl }}" class="btn btn-primary">Book and pay</a>
+        <p class="note">Secure card payment via Stripe.</p>
+        {%- else %}
+        <a href="/contact/?consult=1" class="btn btn-primary">Request a consultation</a>
+        <p class="note">Online booking is coming soon. Request a consultation and we&rsquo;ll send you a secure payment link.</p>
+        {%- endif %}
+      </aside>
+    </div>
+  </section>
+{% include "cta-band.njk" %}

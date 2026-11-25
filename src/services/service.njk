@@ -50,6 +50,11 @@ eleventyComputed:
       </aside>
     </div>
   </section>
+  {%- if svc.slug == "australian-visas-migration" %}
+  <section style="padding-top:0">
+    <div class="wrap">{% include "consult-box.njk" %}</div>
+  </section>
+  {%- endif %}
   <section style="padding-top:0">
     <div class="wrap">
       <div class="sec-head" style="margin-bottom:24px"><h2 style="font-size:1.5rem">Other services</h2></div>

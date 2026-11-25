@@ -1,0 +1,8 @@
+{
+  "live": false,
+  "paymentUrl": "",
+  "price": "$350",
+  "currency": "AUD",
+  "duration": "60 minutes",
+  "gstNote": "No GST for clients outside Australia"
+}

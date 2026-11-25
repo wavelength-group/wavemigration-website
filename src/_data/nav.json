@@ -9,7 +9,8 @@
         { "label": "Specialist College Applications", "url": "/services/specialist-college-applications/" },
         { "label": "Medicare & Provider Numbers", "url": "/services/medicare-provider-numbers/" },
         { "label": "Australian Visas & Migration", "url": "/services/australian-visas-migration/" },
-        { "label": "Nurses & Other Professions", "url": "/services/nurses-other-professions/" }
+        { "label": "Nurses & Other Professions", "url": "/services/nurses-other-professions/" },
+        { "label": "Book a Visa Consultation", "url": "/book-a-consultation/" }
       ]
     },
     {

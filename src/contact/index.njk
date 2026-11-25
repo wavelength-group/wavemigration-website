@@ -28,6 +28,7 @@ permalink: /contact/index.html
               <option>Healthcare professional</option>
               <option>Healthcare employer</option>
               <option>Visa enquiry (non-healthcare)</option>
+              <option>Visa consultation (60 minutes, $350)</option>
               <option>Other</option>
             </select>
           </div>
@@ -43,3 +44,11 @@ permalink: /contact/index.html
       </aside>
     </div>
   </section>
+<script>
+  (function(){
+    if(!/[?&]consult=1/.test(location.search)) return;
+    var t=document.getElementById('f-type'), m=document.getElementById('f-msg');
+    for(var i=0;i<t.options.length;i++){ if(/Visa consultation/.test(t.options[i].text)){ t.selectedIndex=i; } }
+    if(m && !m.value) m.value="I'd like to book an initial 60-minute visa consultation. My preferred days and times (and my time zone) are: ";
+  })();
+</script>
