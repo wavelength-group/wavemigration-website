@@ -1,63 +1,183 @@
 ---
 layout: page.njk
 title: Healthcare Employers
-description: Regulatory and migration support for hospitals and practices recruiting internationally trained doctors and health professionals.
+description: International healthcare recruitment, simplified. Registration, specialist assessment, Medicare and visa support for hospitals and practices recruiting internationally trained healthcare professionals.
 permalink: /who-we-help/healthcare-employers/index.html
 ---
-  <section class="page-head">
+{%- set ic = {
+  clipboard: '<rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/>',
+  list: '<rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/>',
+  users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
+  chart: '<path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/><path d="M15 8h5v5"/>',
+  heart: '<path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/>',
+  search: '<circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><circle cx="17" cy="17" r="3"/><path d="m21 21-1.9-1.9"/>',
+  gear: '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1"/>',
+  steth: '<path d="M5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 12 0V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 12 0v-4"/><circle cx="20" cy="10" r="2"/>',
+  cap: '<path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>',
+  file: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/>',
+  plane: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/>'
+} %}
+{%- set benefits = [
+  ["clipboard", "Reduced administrative burden", "We manage the complex registration, credentialling and migration paperwork, freeing up your internal team."],
+  ["clock", "Fewer delays. Faster outcomes.", "We coordinate the process, anticipate potential roadblocks and keep applications progressing towards commencement."],
+  ["shield", "Confidence in compliance", "We navigate regulatory, registration and sponsorship requirements to help protect your organisation from compliance risks."],
+  ["users", "Complete, coordinated support", "AHPRA registration, specialist college assessments, Medicare and migration managed through one coordinated service."],
+  ["globe", "Access to a wider talent pool", "We identify regulatory and migration pathways that can help you appoint international practitioners you might otherwise miss out on."],
+  ["chart", "Scalable recruitment solutions", "From one overseas appointment to large-scale workforce recruitment programs, we can support your requirements."],
+  ["heart", "More time for what matters", "We don&rsquo;t replace your team &ndash; we take on the essential but time-consuming regulatory admin, so your people can focus on recruitment, onboarding and patient care."]
+] %}
+{%- set steps = [
+  ["search", "You identify the candidate", "Your organisation selects the healthcare professional you wish to recruit."],
+  ["list", "We assess the requirements", "We identify the registration, specialist assessment, Medicare and visa requirements."],
+  ["gear", "We manage the process", "We coordinate applications, documentation, stakeholders and follow-up."],
+  ["steth", "Your candidate gets to work", "We support the process through to the relevant approvals and commencement requirements."]
+] %}
+{%- set tiles = [
+  ["steth", "Professional registration", "AHPRA registration with the relevant Board for international practitioners."],
+  ["cap", "Specialist assessments", "Specialist college assessments, qualification recognition, EPIC verification, ASMIRT and specialist pathway support."],
+  ["file", "Medicare &amp; provider numbers", "Medicare provider numbers, specialist recognition, prescriber numbers, 19AB exemptions and DWS/DPA requirements."],
+  ["plane", "Visa &amp; migration services", "Employer sponsorship and nominations, visa applications and permanent residency pathways."],
+  ["shield", "Employer compliance", "Guidance on sponsorship obligations, regulatory requirements and ongoing compliance."],
+  ["users", "Workforce solutions", "Coordinated support for individual international appointments and larger recruitment campaigns."]
+] %}
+<style>
+  .emp-hero .btn{margin-top:28px}
+  .emp-intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .emp-intro h2{font-size:clamp(1.8rem,3vw,2.4rem)}
+  .emp-intro .sub{margin-top:10px;font-size:19px;font-weight:600;color:var(--teal-ink)}
+  .emp-intro .txt{margin-top:16px;color:var(--muted);font-size:17px}
+  .emp-photo{margin-top:28px;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-lg);aspect-ratio:16/10;background:var(--surface-2)}
+  .emp-photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .benefits{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:30px 30px 18px;box-shadow:var(--shadow)}
+  .benefits h3{font-size:21px;margin-bottom:8px}
+  .benefit{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid var(--line)}
+  .benefits h3+.benefit{border-top:none}
+  .b-ic,.t-ic{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--aqua) 14%,var(--surface-2));color:var(--teal-ink)}
+  .b-ic svg,.t-ic svg{width:22px;height:22px}
+  .benefit b{display:block;font-size:16px;color:var(--ink)}
+  .benefit p{margin-top:4px;font-size:14.5px;color:var(--muted)}
+  .how-head{text-align:center;max-width:60ch;margin:0 auto 40px}
+  .how-head h2{font-size:clamp(1.8rem,3vw,2.4rem)}
+  .how-head p{margin-top:12px;color:var(--muted);font-size:17px}
+  .how{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;counter-reset:how}
+  .how-step{text-align:center;position:relative}
+  .how-step .circle{position:relative;width:96px;height:96px;margin:0 auto;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--aqua) 14%,var(--surface-2));color:var(--teal-ink);border:1px solid var(--line-strong)}
+  .how-step .circle svg{width:40px;height:40px}
+  .how-step .n{position:absolute;top:-4px;left:-4px;width:32px;height:32px;border-radius:50%;background:var(--spark);color:var(--on-accent);font-weight:800;font-size:15px;display:grid;place-items:center}
+  .how-step:not(:last-child)::after{content:"";position:absolute;top:48px;left:calc(50% + 62px);right:calc(-50% + 48px);border-top:2px dashed var(--line-strong)}
+  .how-step h4{margin:20px 0 8px;font-size:17px}
+  .how-step p{font-size:14.5px;color:var(--muted);max-width:26ch;margin:0 auto}
+  .how-tag{margin:40px auto 0;display:table;padding:10px 22px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line-strong);font-weight:700;font-size:14.5px;color:var(--ink)}
+  .wwd-head{max-width:62ch;margin-bottom:32px}
+  .wwd-head h2{font-size:clamp(1.8rem,3vw,2.4rem);margin-top:14px}
+  .wwd{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+  .wwd-tile{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:12px;align-content:start;transition:border-color .2s,transform .2s}
+  .wwd-tile:hover{border-color:var(--line-strong);transform:translateY(-2px)}
+  .wwd-tile h3{font-size:18px}
+  .wwd-tile p{font-size:15px;color:var(--muted)}
+  .proof{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:stretch}
+  .proof .stat-card{display:flex;flex-direction:column;justify-content:center}
+  .quote-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:34px 34px 30px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:center}
+  .quote-card .mark{font-size:64px;line-height:.6;color:var(--spark);font-weight:800;height:28px}
+  .quote-card blockquote{margin:14px 0 0;font-size:18px;line-height:1.6;color:var(--ink)}
+  .quote-card .who{margin-top:18px;font-weight:700;font-size:15px}
+  .quote-card .src{font-size:13px;color:var(--muted);margin-top:2px}
+  @media (max-width:980px){
+    .emp-intro,.proof{grid-template-columns:1fr}
+    .how{grid-template-columns:1fr 1fr;row-gap:40px}
+    .how-step::after{display:none}
+    .wwd{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:600px){
+    .how,.wwd{grid-template-columns:1fr}
+    .benefits{padding:24px 22px 12px}
+  }
+</style>
+  <section class="page-head emp-hero">
     <div class="wrap">
       <p class="crumbs"><a href="/who-we-help/">Who we help</a> &nbsp;/&nbsp; Healthcare employers</p>
-      <h1>I&rsquo;m a Healthcare Employer</h1>
-      <p class="lead">Recruiting internationally trained healthcare professionals? Discover how we can assist with registration, specialist assessment, Medicare and Australian visa requirements.</p>
+      <h1>International healthcare recruitment, simplified.</h1>
+      <p class="lead">Recruiting internationally trained healthcare professionals? We take care of the registration and migration so you can focus on building your workforce.</p>
+      <a href="/contact/" class="btn btn-primary">Discuss your workforce needs <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </section>
-  <!-- EMPLOYERS -->
-  <section style="padding-top:64px">
-    <div class="wrap">
-      <div class="service">
-        <div class="s-copy">
-          <p class="eyebrow">For health employers</p>
-          <h2>One partner for the whole regulatory and migration burden</h2>
-          <p class="lead">Whether you&rsquo;re nominating a single overseas specialist or standing up a cohort of dozens, Wavelength Migration Services removes the administrative risk from international recruitment, so roles are filled faster and every appointment is fully compliant from day one.</p>
-          <p>A single missed requirement can push a start date back by months, attract penalties or leave you with a doctor who can&rsquo;t legally begin work. We take on AHPRA credentialing, section 19AB exemptions, visa compliance and your ongoing sponsorship obligations, so your people can stay focused on running your service.</p>
-          <div class="chips">
-            <span class="chip">Mass recruitment projects</span>
-            <span class="chip">Sponsorship &amp; nomination</span>
-            <span class="chip">Regulatory compliance</span>
-            <span class="chip">Australia &amp; New Zealand</span>
-          </div>
-        </div>
-        <div class="s-panel">
-          <ul class="svc-list">
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>AHPRA registration &amp; medical college applications</b> &ndash; fully managed by us so your team can focus on your workforce. We minimise the administrative burden, streamline the paperwork and keep the application moving.</span></li>
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Area of Need &amp; DWS/DPA advice</b> &ndash; we know how each regulatory body and policy interacts, avoiding potential billing issues and offering solutions so you can employ doctors you might not otherwise reach.</span></li>
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Medicare provider &amp; prescriber numbers</b> &ndash; including 19AB, academic and other exemptions.</span></li>
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Immigration &amp; visa nomination</b> &ndash; Skills in Demand (subclass 482) and Employer Nomination Scheme (subclass 186) nominations, sponsorship obligations and permanent pathways.</span></li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="service rev" style="margin-top:64px">
-        <div class="s-copy">
-          <div class="stat-card">
-            <div class="big">110<span class="plus">+</span></div>
-            <div class="cap">employer nomination applications delivered for a single regional healthcare provider recruiting internationally.</div>
-            <div class="rule"></div>
-            <div class="foot">Proof that we scale, from one appointment to an entire workforce program.</div>
-            <img class="cardmark" src="/assets/img/mark.svg" alt="">
-          </div>
+  <section style="padding-top:64px">
+    <div class="wrap emp-intro">
+      <div>
+        <p class="eyebrow">For health employers</p>
+        <h2 style="margin-top:14px">One partner. The whole process.</h2>
+        <p class="sub">Your international workforce, supported at every step.</p>
+        <p class="txt">We coordinate the registration and migration requirements involved in bringing international healthcare professionals into your workforce. From AHPRA registration and specialist assessments to visa sponsorship and Medicare billing, we manage the entire process so you can focus on delivering healthcare.</p>
+        <div class="emp-photo"><img src="/assets/img/employers-hospital.svg" alt="Clinicians walking together through a modern hospital foyer" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="benefits">
+        <h3>Why healthcare employers choose Wavelength</h3>
+        {%- for b in benefits %}
+        <div class="benefit">
+          <span class="b-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ ic[b[0]] | safe }}</svg></span>
+          <div><b>{{ b[1] | safe }}</b><p>{{ b[2] | safe }}</p></div>
         </div>
-        <div class="s-copy">
-          <h2>Why employers hand this to us</h2>
-          <ul class="svc-list">
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>100% compliance.</b> Every regulatory and migration requirement met - no gaps, no surprises at audit.</span></li>
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Minimised processing time.</b> We keep applications moving and keep you informed at every stage.</span></li>
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>One step ahead.</b> We know the common complications before they arise and design around them.</span></li>
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Wider talent pool.</b> We find pathways to appoint practitioners you may not otherwise be able to employ.</span></li>
-            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>More time for what matters.</b> We don&rsquo;t replace your team &ndash; we take on the essential but time-consuming regulatory admin, so your people can focus on recruitment, onboarding and patient care.</span></li>
-          </ul>
-          <a href="/contact/" class="btn btn-primary" style="margin-top:26px">Discuss a project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="how-head">
+        <p class="eyebrow">Our process</p>
+        <h2 style="margin-top:14px">How we work together</h2>
+        <p>A simple, streamlined process to get your international healthcare professionals into your workforce.</p>
+      </div>
+      <div class="how">
+        {%- for s in steps %}
+        <div class="how-step">
+          <div class="circle"><span class="n">{{ loop.index }}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{{ ic[s[0]] | safe }}</svg></div>
+          <h4>{{ s[1] }}</h4>
+          <p>{{ s[2] }}</p>
         </div>
+        {%- endfor %}
+      </div>
+      <p class="how-tag">Your international workforce. Our expertise.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="wwd-head">
+        <p class="eyebrow">What we do</p>
+        <h2>Everything you need to get your international workforce working</h2>
+      </div>
+      <div class="wwd">
+        {%- for t in tiles %}
+        <div class="wwd-tile">
+          <span class="t-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ ic[t[0]] | safe }}</svg></span>
+          <h3>{{ t[1] | safe }}</h3>
+          <p>{{ t[2] }}</p>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap proof">
+      <div class="stat-card">
+        <div class="big">110<span class="plus">+</span></div>
+        <div class="cap">employer nomination applications delivered for a single regional healthcare provider recruiting internationally.</div>
+        <div class="rule"></div>
+        <div class="foot">Proof that we scale, from one appointment to an entire workforce program.</div>
+        <img class="cardmark" src="/assets/img/mark.svg" alt="">
+      </div>
+      <div class="quote-card">
+        <div class="mark">&ldquo;</div>
+        <blockquote>Elinor&rsquo;s knowledge and guidance made what can be a very complex process significantly easier to navigate. She has always been responsive, thorough and proactive, and we genuinely felt supported every step of the way.</blockquote>
+        <div class="who">Gillian M., Bunbury and Busselton Eye Specialists</div>
+        <div class="src">Google review &middot; SIMG recruitment and registration</div>
       </div>
     </div>
   </section>
