@@ -9,10 +9,10 @@ module.exports = function (eleventyConfig) {
     const fs = require("fs"), path = require("path");
     const recolour = {
       // Wave mark stays orange (Lagoon Glow secondary on dark; original brand orange on light)
-      "logo-dark.svg": [["#E87722", "#D97757"], ["#5FC5C9", "#00B9B5"]],
+      "logo-dark.svg": [["#E87722", "#FFB840"], ["#5FC5C9", "#00B9B5"]],
       "logo-light.svg": [["#033F3D", "#0B2E31"], ["#0C7A82", "#08807A"]],
       // Square mark (favicon, badges, card watermarks) in the same apricot as the logo wave on dark
-      "mark.svg": [["#E87722", "#D97757"]],
+      "mark.svg": [["#E87722", "#FFB840"]],
     };
     // More space between "wavelength" and "MIGRATION SERVICES": wordmark up 25 units, descriptor down 15 (Nov 2026)
     const spacing = { "logo-dark.svg": ["#FFFFFF", "#5FC5C9"], "logo-light.svg": ["#033F3D", "#0C7A82"] };
